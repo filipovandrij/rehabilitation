@@ -21,10 +21,32 @@ const Header = (props: Props) => {
                     <HealingIcon></HealingIcon>
                 </IconButton>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    Filipov Rehabilitation Clinic
+                    Filipov Rehabilitation Center
                 </Typography>
                 <Menu></Menu>
             </Toolbar>
+            <Typography>
+                <div className="slide">
+                    <div className="left_btn">⟨</div>
+                    <div className="picture_slide">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="text_slide">
+                        <p>
+                            Work with terapists. Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Delectus reiciendis
+                            rem repellendus commodi totam voluptas eum est
+                            dolores sint, libero odit, hic harum numquam, ipsam
+                            quo! Dolor fugit animi quod?Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Delectus
+                            reiciendis rem repellendus commodi totam voluptas
+                            eum est dolores sint, libero odit, hic harum
+                            numquam, ipsam quo! Dolor fugit animi quod?
+                        </p>
+                    </div>
+                    <div className="right_btn">⟩</div>
+                </div>
+            </Typography>
         </AppBar>
     )
 }

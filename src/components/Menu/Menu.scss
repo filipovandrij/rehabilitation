@@ -1,5 +1,33 @@
 .btn {
-    color: #0075b7;
-    font-weight: 700;
-    font-size: 18px;
+    color: #88bcda;
+}
+
+.slide {
+    margin: 15px 0;
+    width: 100%;
+    border: solid #fff 1px;
+    display: flex;
+
+    .picture_slide {
+        background-color: black;
+        width: 70%;
+        height: 500px;
+        margin: 5px;
+        border: solid #fff 1px;
+    }
+    .text_slide {
+        margin: 5px;
+        border: solid #fff 1px;
+        width: 20%;
+    }
+
+    .left_btn,
+    .right_btn {
+        width: 5%;
+        margin: 5px;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
