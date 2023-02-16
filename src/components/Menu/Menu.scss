@@ -1,5 +1,8 @@
 .btn {
-    color: #88bcda;
+    color: #aee0fd;
+    &:hover {
+        background-color: rgba(94, 160, 206, 0.3);
+    }
 }
 
 .btn_сonsultation {
