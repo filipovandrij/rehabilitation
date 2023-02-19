@@ -13,7 +13,7 @@ const Slider = (props: Props) => {
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 55000,
+                    delay: 5500,
                     disableOnInteraction: false,
                 }}
                 pagination={{
