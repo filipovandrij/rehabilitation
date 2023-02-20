@@ -15,223 +15,217 @@ type Props = {}
 
 const Main = (props: Props) => {
     return (
-        <StyledEngineProvider injectFirst>
-            <main>
-                <Slider></Slider>
+        <main>
+            <Slider></Slider>
 
-                <section className="section_about_clinic">
-                    <div className="container_about">
-                        <h3 className="first">
-                            <FormatIndentIncreaseOutlinedIcon
-                                fontSize="large"
-                                className="h3_icon"
-                            />
-                            CLINIC
-                        </h3>
-                        <p>вислів</p>
-                        <article>
-                            ARTICLE Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Est illum deleniti qui nisi, vel
-                            ea dolore minus assumenda. Odit perferendis
-                            consectetur itaque repellendus rem corrupti laborum
-                            exercitationem provident. Sunt, dolor.
-                        </article>
-                        <p>Мета - яка мета</p>
-                        <Button variant="contained">
-                            Дізнатись трохи більше
+            <section className="section_about_clinic">
+                <div className="container_about">
+                    <h3 className="first">
+                        <FormatIndentIncreaseOutlinedIcon
+                            fontSize="large"
+                            className="h3_icon"
+                        />
+                        CLINIC
+                    </h3>
+                    <p>вислів</p>
+                    <article>
+                        ARTICLE Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Est illum deleniti qui nisi, vel ea
+                        dolore minus assumenda. Odit perferendis consectetur
+                        itaque repellendus rem corrupti laborum exercitationem
+                        provident. Sunt, dolor.
+                    </article>
+                    <p>Мета - яка мета</p>
+                    <Button variant="contained">Дізнатись трохи більше</Button>
+                </div>
+                <div className="about_video">
+                    <ReactPlayer
+                        className="content_video"
+                        url="https://www.youtube.com/embed/4Sxybl1VaRY"
+                        title="YouTube video player"
+                    ></ReactPlayer>
+                </div>
+            </section>
+
+            <Container maxWidth="xl">
+                <section className="call_back">
+                    <hr />
+                    <h3>
+                        <PhoneIcon /> Зворотній зв'зок
+                    </h3>
+                    <p>
+                        Підбір лікарями комплексної індивідуальної програми
+                        відновлення
+                    </p>
+                    <form action="#" className="call-back-form">
+                        <TextField
+                            className="call-back-text-field"
+                            fullWidth
+                            id="outlined-basic"
+                            label="Ваше ім'я"
+                            variant="outlined"
+                        />
+                        <TextField
+                            fullWidth
+                            id="outlined-basic"
+                            label="Номер телефону"
+                            variant="outlined"
+                        />
+                        <Button className="call-back-btn" variant="contained">
+                            Залишити заявку
                         </Button>
-                    </div>
-                    <div className="about_video">
-                        <ReactPlayer
-                            className="content_video"
-                            url="https://www.youtube.com/embed/4Sxybl1VaRY"
-                            title="YouTube video player"
-                        ></ReactPlayer>
+                    </form>
+                    <hr />
+                </section>
+                <section className="section_about_services">
+                    <h3>
+                        <FormatIndentIncreaseOutlinedIcon
+                            fontSize="large"
+                            className="h3_icon"
+                        />
+                        SERVICES
+                    </h3>
+                    <div className="container_inner_about">
+                        <div className="cart-about">
+                            <img src="/images/cart_adult.png" alt="img" />
+                            <h2>Реабілітація для дорослих</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="№">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="№">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="№">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="№">фіафі</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="cart-about">
+                            <img src="/images/cart_injection.png" alt="img" />
+                            <h2>Лікувальні блокади</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="cart-about">
+                            <img
+                                src="/images/cart_consultation.png"
+                                alt="img"
+                            />
+                            <h2>Консультація лікарів</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="cart-about">
+                            <img src="/images/cart_children.png" alt="img" />
+                            <h2>Реабілітація для дітей</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="cart-about">
+                            <img
+                                src="/images/cart_physioterapy.png"
+                                alt="img"
+                            />
+                            <h2>Фізіотерапія</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="cart-about">
+                            <img src="/images/cart_diagnostic.png" alt="img" />
+                            <h2>Діагностика</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                                <li>
+                                    <a href="#">фіафі</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
-
-                <Container maxWidth="xl">
-                    <section className="call_back">
-                        <hr />
-                        <h3>
-                            <PhoneIcon /> Зворотній зв'зок
-                        </h3>
-                        <p>
-                            Підбір лікарями комплексної індивідуальної програми
-                            відновлення
-                        </p>
-                        <form action="#" className="call-back-form">
-                            <TextField
-                                className="call-back-text-field"
-                                fullWidth
-                                id="outlined-basic"
-                                label="Ваше ім'я"
-                                variant="outlined"
-                            />
-                            <TextField
-                                fullWidth
-                                id="outlined-basic"
-                                label="Номер телефону"
-                                variant="outlined"
-                            />
-                            <Button
-                                className="call-back-btn"
-                                variant="contained"
-                            >
-                                Залишити заявку
-                            </Button>
-                        </form>
-                        <hr />
-                    </section>
-                    <section className="section_about_services">
-                        <div className="container_inner_about">
-                            <div className="cart-about">
-                                <img src="/images/cart_adult.png" alt="img" />
-                                <h2>Реабілітація для дорослих</h2>
-                                <ul>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="№">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="№">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="№">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="№">фіафі</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="cart-about">
-                                <img
-                                    src="/images/cart_injection.png"
-                                    alt="img"
-                                />
-                                <h2>Лікувальні блокади</h2>
-                                <ul>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="cart-about">
-                                <img
-                                    src="/images/cart_consultation.png"
-                                    alt="img"
-                                />
-                                <h2>Консультація лікарів</h2>
-                                <ul>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="cart-about">
-                                <img
-                                    src="/images/cart_children.png"
-                                    alt="img"
-                                />
-                                <h2>Реабілітація для дітей</h2>
-                                <ul>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="cart-about">
-                                <img
-                                    src="/images/cart_physioterapy.png"
-                                    alt="img"
-                                />
-                                <h2>Фізіотерапія</h2>
-                                <ul>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="cart-about">
-                                <img
-                                    src="/images/cart_diagnostic.png"
-                                    alt="img"
-                                />
-                                <h2>Діагностика</h2>
-                                <ul>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">фіафі</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <section className="section_about_treatment"></section>
-                </Container>
-            </main>
-        </StyledEngineProvider>
+            </Container>
+            <section className="section_injections"></section>
+            <Container maxWidth="xl">
+                <section className="section_about_treatment"></section>
+            </Container>
+        </main>
     )
 }
 export default Main

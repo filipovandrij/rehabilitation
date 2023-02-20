@@ -48,16 +48,23 @@ main {
     }
 
     .container_inner_about {
+        height: auto;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
 
         .cart-about {
-            min-width: 33%;
-            height: auto;
+            height: 100%;
+            min-width: 26%;
+
+            h2 {
+                margin: auto;
+            }
 
             img {
-                width: 70%;
-                height: 70%;
+                width: 340px;
+                height: 170px;
             }
         }
     }
