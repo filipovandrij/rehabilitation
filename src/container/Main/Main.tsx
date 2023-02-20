@@ -9,6 +9,7 @@ import Slider from '../../components/Slider/Slider'
 import './Main.scss'
 import FormatIndentIncreaseOutlinedIcon from '@mui/icons-material/FormatIndentIncreaseOutlined'
 import PhoneIcon from '@mui/icons-material/Phone'
+import { url } from 'inspector'
 
 type Props = {}
 
@@ -85,128 +86,143 @@ const Main = (props: Props) => {
                     <section className="section_about_services">
                         <div className="container_inner_about">
                             <div className="cart-about">
-                                <img src="" alt="img" />
+                                <img src="/images/cart_adult.png" alt="img" />
                                 <h2>Реабілітація для дорослих</h2>
                                 <ul>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href=""></a>
+                                        <a href="№">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href=""></a>
+                                        <a href="№">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href=""></a>
+                                        <a href="№">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href=""></a>
+                                        <a href="№">фіафі</a>
                                     </li>
                                 </ul>
                             </div>
                             <div className="cart-about">
-                                <img src="" alt="img" />
+                                <img
+                                    src="/images/cart_injection.png"
+                                    alt="img"
+                                />
                                 <h2>Лікувальні блокади</h2>
                                 <ul>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                 </ul>
                             </div>
                             <div className="cart-about">
-                                <img src="" alt="img" />
+                                <img
+                                    src="/images/cart_consultation.png"
+                                    alt="img"
+                                />
                                 <h2>Консультація лікарів</h2>
                                 <ul>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                 </ul>
                             </div>
                             <div className="cart-about">
-                                <img src="" alt="img" />
+                                <img
+                                    src="/images/cart_children.png"
+                                    alt="img"
+                                />
                                 <h2>Реабілітація для дітей</h2>
                                 <ul>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                 </ul>
                             </div>
                             <div className="cart-about">
-                                <img src="" alt="img" />
+                                <img
+                                    src="/images/cart_physioterapy.png"
+                                    alt="img"
+                                />
                                 <h2>Фізіотерапія</h2>
                                 <ul>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                 </ul>
                             </div>
                             <div className="cart-about">
-                                <img src="" alt="img" />
+                                <img
+                                    src="/images/cart_diagnostic.png"
+                                    alt="img"
+                                />
                                 <h2>Діагностика</h2>
                                 <ul>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                     <li>
-                                        <a href="#"></a>
+                                        <a href="#">фіафі</a>
                                     </li>
                                 </ul>
                             </div>
