@@ -1,7 +1,14 @@
-import { Button, Container, StyledEngineProvider } from '@mui/material'
+import {
+    Button,
+    Container,
+    StyledEngineProvider,
+    TextField,
+} from '@mui/material'
 import ReactPlayer from 'react-player'
 import Slider from '../../components/Slider/Slider'
 import './Main.scss'
+import FormatIndentIncreaseOutlinedIcon from '@mui/icons-material/FormatIndentIncreaseOutlined'
+import PhoneIcon from '@mui/icons-material/Phone'
 
 type Props = {}
 
@@ -13,7 +20,13 @@ const Main = (props: Props) => {
 
                 <section className="section_about_clinic">
                     <div className="container_about">
-                        <h3 className="first">CLINIC</h3>
+                        <h3 className="first">
+                            <FormatIndentIncreaseOutlinedIcon
+                                fontSize="large"
+                                className="h3_icon"
+                            />
+                            CLINIC
+                        </h3>
                         <p>вислів</p>
                         <article>
                             ARTICLE Lorem ipsum dolor, sit amet consectetur
@@ -35,7 +48,38 @@ const Main = (props: Props) => {
                         ></ReactPlayer>
                     </div>
                 </section>
+
                 <Container maxWidth="xl">
+                    <section className="call_back">
+                        <h3>
+                            <PhoneIcon /> Зворотній зв'зок
+                        </h3>
+                        <p>
+                            Підбір лікарями комплексної індивідуальної програми
+                            відновлення
+                        </p>
+                        <form action="#" className="call-back-form">
+                            <TextField
+                                className="call-back-text-field"
+                                fullWidth
+                                id="outlined-basic"
+                                label="Ваше ім'я"
+                                variant="outlined"
+                            />
+                            <TextField
+                                fullWidth
+                                id="outlined-basic"
+                                label="Номер телефону"
+                                variant="outlined"
+                            />
+                            <Button
+                                className="call-back-btn"
+                                variant="contained"
+                            >
+                                Залишити заявку
+                            </Button>
+                        </form>
+                    </section>
                     <section className="section_about_services"></section>
                     <section className="section_about_treatment"></section>
                 </Container>

@@ -1,19 +1,21 @@
 main {
     padding-top: 5px;
     background-color: #001e3c;
+    color: white;
+
+    p {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 30px;
+    }
 
     .section_about_clinic {
         padding-top: 80px;
+        padding-bottom: 70px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        .container_about {
-            color: white;
-            display: block;
-            h3 {
-                font-size: 20px;
-            }
-        }
         .about_video {
             display: flex;
             justify-content: center;
@@ -24,5 +26,17 @@ main {
                 border-bottom-left-radius: 80px 80px;
             }
         }
+    }
+
+    .call-back-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .call-back-btn {
+        margin: 0 15px;
+        width: 30%;
     }
 }
