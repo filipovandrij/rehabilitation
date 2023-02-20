@@ -9,6 +9,9 @@ main {
     h3 {
         font-size: 30px;
     }
+    .container_about {
+        margin: auto 15px;
+    }
 
     .section_about_clinic {
         padding-top: 80px;
@@ -16,16 +19,20 @@ main {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        article {
+            width: 80%;
+        }
         .about_video {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
             width: 60%;
-            .content_video {
-                border-bottom-left-radius: 80px 80px;
-            }
         }
+    }
+
+    .call_back {
+        padding: 10px 0;
     }
 
     .call-back-form {
@@ -38,5 +45,16 @@ main {
     .call-back-btn {
         margin: 0 15px;
         width: 30%;
+    }
+
+    .container_inner_about {
+        display: flex;
+        flex-wrap: wrap;
+
+        .cart-about {
+            display: flex;
+            min-width: 33%;
+            height: auto;
+        }
     }
 }

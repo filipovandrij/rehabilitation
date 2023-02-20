@@ -51,6 +51,7 @@ const Main = (props: Props) => {
 
                 <Container maxWidth="xl">
                     <section className="call_back">
+                        <hr />
                         <h3>
                             <PhoneIcon /> Зворотній зв'зок
                         </h3>
@@ -79,8 +80,138 @@ const Main = (props: Props) => {
                                 Залишити заявку
                             </Button>
                         </form>
+                        <hr />
                     </section>
-                    <section className="section_about_services"></section>
+                    <section className="section_about_services">
+                        <div className="container_inner_about">
+                            <div className="cart-about">
+                                <img src="" alt="img" />
+                                <h2>Реабілітація для дорослих</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="cart-about">
+                                <img src="" alt="img" />
+                                <h2>Лікувальні блокади</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="cart-about">
+                                <img src="" alt="img" />
+                                <h2>Консультація лікарів</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="cart-about">
+                                <img src="" alt="img" />
+                                <h2>Реабілітація для дітей</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="cart-about">
+                                <img src="" alt="img" />
+                                <h2>Фізіотерапія</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="cart-about">
+                                <img src="" alt="img" />
+                                <h2>Діагностика</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                     <section className="section_about_treatment"></section>
                 </Container>
             </main>
