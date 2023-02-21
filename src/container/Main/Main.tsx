@@ -386,6 +386,14 @@ const Main = (props: Props) => {
                         Desires are necessary for life to be constantly in
                         motion.
                     </span>
+                    <Button
+                        className="moving_btn"
+                        size="large"
+                        variant="contained"
+                        sx={{ marginTop: 3 }}
+                    >
+                        Start moving
+                    </Button>
                 </div>
             </section>
             <Container maxWidth="xl">
