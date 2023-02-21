@@ -16,7 +16,6 @@ const Header = (props: Props) => {
                     edge="start"
                     color="inherit"
                     aria-label="menu"
-                    sx={{ mr: 2 }}
                 >
                     <HealingIcon></HealingIcon>
                 </IconButton>

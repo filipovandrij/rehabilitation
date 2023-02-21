@@ -1,0 +1,38 @@
+footer {
+    padding-top: 40px;
+    background-color: #001e3c;
+    color: white;
+    hr {
+        border: 1px solid white;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container_box_one {
+        width: 40%;
+        P {
+            width: 80%;
+        }
+    }
+    .container_box_two {
+        width: 60%;
+
+        .support {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .email_btn {
+            text-align: center;
+        }
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+}
