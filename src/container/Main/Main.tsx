@@ -1,15 +1,18 @@
 import {
     Button,
+    Card,
+    CardContent,
+    CardMedia,
     Container,
-    StyledEngineProvider,
+    Link,
     TextField,
+    Typography,
 } from '@mui/material'
 import ReactPlayer from 'react-player'
 import Slider from '../../components/Slider/Slider'
 import './Main.scss'
 import FormatIndentIncreaseOutlinedIcon from '@mui/icons-material/FormatIndentIncreaseOutlined'
 import PhoneIcon from '@mui/icons-material/Phone'
-import { url } from 'inspector'
 
 type Props = {}
 
@@ -86,138 +89,294 @@ const Main = (props: Props) => {
                         SERVICES
                     </h3>
                     <div className="container_inner_about">
-                        <div className="cart-about">
-                            <img src="/images/cart_adult.png" alt="img" />
-                            <h2>Реабілітація для дорослих</h2>
-                            <ul>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="№">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="№">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="№">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="№">фіафі</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="cart-about">
-                            <img src="/images/cart_injection.png" alt="img" />
-                            <h2>Лікувальні блокади</h2>
-                            <ul>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="cart-about">
-                            <img
-                                src="/images/cart_consultation.png"
-                                alt="img"
+                        <Card sx={{ minWidth: 400, marginTop: 5 }}>
+                            <CardMedia
+                                sx={{ height: 140 }}
+                                image="/images/cart_adult.png"
+                                title="green iguana"
                             />
-                            <h2>Консультація лікарів</h2>
-                            <ul>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="cart-about">
-                            <img src="/images/cart_children.png" alt="img" />
-                            <h2>Реабілітація для дітей</h2>
-                            <ul>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="cart-about">
-                            <img
-                                src="/images/cart_physioterapy.png"
-                                alt="img"
+                            <CardContent className="cart_text_bg">
+                                <Typography
+                                    gutterBottom
+                                    variant="h5"
+                                    component="div"
+                                >
+                                    Реабілітація для дорослих
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{ minWidth: 400, marginTop: 5 }}>
+                            <CardMedia
+                                sx={{ height: 140 }}
+                                image="/images/cart_injection.png"
+                                title="green iguana"
                             />
-                            <h2>Фізіотерапія</h2>
-                            <ul>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="cart-about">
-                            <img src="/images/cart_diagnostic.png" alt="img" />
-                            <h2>Діагностика</h2>
-                            <ul>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                                <li>
-                                    <a href="#">фіафі</a>
-                                </li>
-                            </ul>
-                        </div>
+                            <CardContent className="cart_text_bg">
+                                <Typography
+                                    gutterBottom
+                                    variant="h5"
+                                    component="div"
+                                >
+                                    Лікувальні блокади
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{ minWidth: 400, marginTop: 5 }}>
+                            <CardMedia
+                                sx={{ height: 140 }}
+                                image="/images/cart_children.png"
+                                title="green iguana"
+                            />
+                            <CardContent className="cart_text_bg">
+                                <Typography
+                                    gutterBottom
+                                    variant="h5"
+                                    component="div"
+                                >
+                                    Реабілітація для дітей
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{ minWidth: 400, marginTop: 5 }}>
+                            <CardMedia
+                                sx={{ height: 140 }}
+                                image="/images/cart_physioterapy.png"
+                                title="green iguana"
+                            />
+                            <CardContent className="cart_text_bg">
+                                <Typography
+                                    gutterBottom
+                                    variant="h5"
+                                    component="div"
+                                >
+                                    Фізеотерапія
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{ minWidth: 400, marginTop: 5 }}>
+                            <CardMedia
+                                sx={{ height: 140 }}
+                                image="/images/cart_consultation.png"
+                                title="green iguana"
+                            />
+                            <CardContent className="cart_text_bg">
+                                <Typography
+                                    gutterBottom
+                                    variant="h5"
+                                    component="div"
+                                >
+                                    Консультація лікарів
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{ minWidth: 400, marginTop: 5 }}>
+                            <CardMedia
+                                sx={{ height: 140 }}
+                                image="/images/cart_diagnostic.png"
+                                title="green iguana"
+                            />
+                            <CardContent className="cart_text_bg">
+                                <Typography
+                                    gutterBottom
+                                    variant="h5"
+                                    component="div"
+                                >
+                                    Діагностика
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                фіафі
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
                     </div>
                 </section>
             </Container>
