@@ -13,6 +13,7 @@ import Slider from '../../components/Slider/Slider'
 import './Main.scss'
 import FormatIndentIncreaseOutlinedIcon from '@mui/icons-material/FormatIndentIncreaseOutlined'
 import PhoneIcon from '@mui/icons-material/Phone'
+import DoneIcon from '@mui/icons-material/Done'
 
 type Props = {}
 
@@ -88,7 +89,7 @@ const Main = (props: Props) => {
                         />
                         SERVICES
                     </h3>
-                    <div className="container_inner_about">
+                    <div className="container_inner_row">
                         <Card sx={{ minWidth: 400, marginTop: 5 }}>
                             <CardMedia
                                 sx={{ height: 140 }}
@@ -380,8 +381,8 @@ const Main = (props: Props) => {
                     </div>
                 </section>
             </Container>
-            <section className="section_injections">
-                <div className="injectoins_bg">
+            <section className="section_moving">
+                <div className="moving_bg">
                     <span>
                         Desires are necessary for life to be constantly in
                         motion.
@@ -397,7 +398,347 @@ const Main = (props: Props) => {
                 </div>
             </section>
             <Container maxWidth="xl">
-                <section className="section_about_treatment"></section>
+                <section className="section_about_treatment">
+                    <h3>
+                        <FormatIndentIncreaseOutlinedIcon
+                            fontSize="large"
+                            className="h3_icon"
+                        />
+                        What do we treat?
+                    </h3>
+                    <div className="container_inner_row">
+                        <Card
+                            className="cart_text_bg"
+                            sx={{ minWidth: 400, marginTop: 5 }}
+                        >
+                            <CardContent>
+                                <Typography variant="h5" component="div">
+                                    <DoneIcon fontSize="medium" />
+                                    Somethink
+                                </Typography>
+                                <Typography variant="body2">
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card
+                            className="cart_text_bg"
+                            sx={{ minWidth: 400, marginTop: 5 }}
+                        >
+                            <CardContent>
+                                <Typography variant="h5" component="div">
+                                    <DoneIcon fontSize="medium" />
+                                    Somethink
+                                </Typography>
+                                <Typography variant="body2">
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card
+                            className="cart_text_bg"
+                            sx={{ minWidth: 400, marginTop: 5 }}
+                        >
+                            <CardContent>
+                                <Typography variant="h5" component="div">
+                                    <DoneIcon fontSize="medium" />
+                                    Somethink
+                                </Typography>
+                                <Typography variant="body2">
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card
+                            className="cart_text_bg"
+                            sx={{ minWidth: 400, marginTop: 5 }}
+                        >
+                            <CardContent>
+                                <Typography variant="h5" component="div">
+                                    <DoneIcon fontSize="medium" />
+                                    Somethink
+                                </Typography>
+                                <Typography variant="body2">
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card
+                            className="cart_text_bg"
+                            sx={{ minWidth: 400, marginTop: 5 }}
+                        >
+                            <CardContent>
+                                <Typography variant="h5" component="div">
+                                    <DoneIcon fontSize="medium" />
+                                    Somethink
+                                </Typography>
+                                <Typography variant="body2">
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card
+                            className="cart_text_bg"
+                            sx={{ minWidth: 400, marginTop: 5 }}
+                        >
+                            <CardContent>
+                                <Typography variant="h5" component="div">
+                                    <DoneIcon fontSize="medium" />
+                                    Somethink
+                                </Typography>
+                                <Typography variant="body2">
+                                    <ul>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" underline="always">
+                                                123
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </section>
             </Container>
         </main>
     )
