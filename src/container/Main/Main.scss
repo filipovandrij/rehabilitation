@@ -72,4 +72,22 @@ main {
     .cart_text_bg {
         background-color: #aee0fd;
     }
+
+    .section_injections {
+        .injectoins_bg {
+            margin: 20px 0 0;
+            width: 100%;
+            height: 500px;
+            background-image: url('./sport_line.jpeg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
 }

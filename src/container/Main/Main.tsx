@@ -380,7 +380,14 @@ const Main = (props: Props) => {
                     </div>
                 </section>
             </Container>
-            <section className="section_injections"></section>
+            <section className="section_injections">
+                <div className="injectoins_bg">
+                    <span>
+                        Desires are necessary for life to be constantly in
+                        motion.
+                    </span>
+                </div>
+            </section>
             <Container maxWidth="xl">
                 <section className="section_about_treatment"></section>
             </Container>
