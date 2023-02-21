@@ -414,48 +414,46 @@ const Main = (props: Props) => {
                             <CardContent>
                                 <Typography variant="h5" component="div">
                                     <DoneIcon fontSize="medium" />
-                                    Somethink
+                                    Treatment of spine diseases
                                 </Typography>
+                                <hr className="under_line_treatment" />
                                 <Typography variant="body2">
                                     <ul>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Hernias, protrusions of the
+                                                intervertebral disc
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Deformations of the spine
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Stenosis of the spinal canal
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Osteochondrosis of the spine
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Spondylolisthesis,
+                                                spondyloarthrosis
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Myofascial syndrome
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="#" underline="always">
-                                                123
+                                                Radiculitis
                                             </Link>
                                         </li>
                                     </ul>
@@ -469,48 +467,44 @@ const Main = (props: Props) => {
                             <CardContent>
                                 <Typography variant="h5" component="div">
                                     <DoneIcon fontSize="medium" />
-                                    Somethink
+                                    Treatment of joint diseases
                                 </Typography>
+                                <hr className="under_line_treatment" />
                                 <Typography variant="body2">
                                     <ul>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Arthrosis
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Arthritis
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Contracture
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Bursitis
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Gout
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Osteoarthritis
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="#" underline="always">
-                                                123
+                                                Osteoporosis
                                             </Link>
                                         </li>
                                     </ul>
@@ -524,48 +518,50 @@ const Main = (props: Props) => {
                             <CardContent>
                                 <Typography variant="h5" component="div">
                                     <DoneIcon fontSize="medium" />
-                                    Somethink
+                                    Treatment of pain syndrome
                                 </Typography>
+                                <hr className="under_line_treatment" />
                                 <Typography variant="body2">
                                     <ul>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Pain in the joints
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Back ache
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Pain in the neck
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Pelvic pain
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Headache and dizziness
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Tunnel syndromes (pain in the
+                                                upper and lower extremities)
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Neuralgia of the facial nerve
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Postherpetic neuralgia
                                             </Link>
                                         </li>
                                     </ul>
@@ -579,48 +575,51 @@ const Main = (props: Props) => {
                             <CardContent>
                                 <Typography variant="h5" component="div">
                                     <DoneIcon fontSize="medium" />
-                                    Somethink
+                                    Children's rehabilitation
                                 </Typography>
+                                <hr className="under_line_treatment" />
                                 <Typography variant="body2">
                                     <ul>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Diseases of the musculoskeletal
+                                                system
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Children's scoliosis
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                ASD, an autistic spectrum
+                                                disorder, autism
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                CP is infantile cerebral palsy
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                MR Mental retardation
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Down syndrome
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                SMA - spinal muscular atrophy
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                ССI - craniocerebral injuries
                                             </Link>
                                         </li>
                                     </ul>
@@ -634,48 +633,49 @@ const Main = (props: Props) => {
                             <CardContent>
                                 <Typography variant="h5" component="div">
                                     <DoneIcon fontSize="medium" />
-                                    Somethink
+                                    Prevention and recovery
                                 </Typography>
+                                <hr className="under_line_treatment" />
                                 <Typography variant="body2">
                                     <ul>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                After fractures
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                After sports injuries
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Spinal injuries
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                After operations
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Recovery after a stroke
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Therapy during pregnancy
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Postpartum rehabilitation
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Rehabilitation after Covid
                                             </Link>
                                         </li>
                                     </ul>
@@ -689,48 +689,45 @@ const Main = (props: Props) => {
                             <CardContent>
                                 <Typography variant="h5" component="div">
                                     <DoneIcon fontSize="medium" />
-                                    Somethink
+                                    Treatment of diseases of the <br /> muscular
+                                    system
                                 </Typography>
+                                <hr className="under_line_treatment" />
                                 <Typography variant="body2">
                                     <ul>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Weakness in connections
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Myalgia
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Myositis
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Hypertonus
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Muscle weakness (hypotonus)
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
+                                                Slaughter
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#" underline="always">
-                                                123
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="#" underline="always">
-                                                123
+                                                Flatfoot
                                             </Link>
                                         </li>
                                     </ul>
@@ -740,6 +737,19 @@ const Main = (props: Props) => {
                     </div>
                 </section>
             </Container>
+            <section className="section_recovery">
+                <div className="recovery_bg">
+                    <span>Your well-being depends on your own decisions</span>
+                    <Button
+                        className="moving_btn"
+                        size="large"
+                        variant="contained"
+                        sx={{ marginTop: 3 }}
+                    >
+                        Start recovery
+                    </Button>
+                </div>
+            </section>
         </main>
     )
 }
