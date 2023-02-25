@@ -1,7 +1,37 @@
 .btn {
+    position: relative;
     color: #aee0fd;
     &:hover {
         background-color: rgba(94, 160, 206, 0.3);
+    }
+
+    &:hover .dropdown_modal {
+        display: block;
+    }
+
+    .dropdown_modal {
+        background-color: #001e3c;
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        top: 36.5px;
+        width: 200px;
+        display: none;
+        z-index: 2;
+        ul {
+            padding: 10px 8px;
+            margin: auto;
+            list-style: none;
+            text-align: center;
+            li {
+                padding: 5px;
+                &:hover {
+                    transition: 0.5s;
+                    background-color: rgba(94, 160, 206, 0.3);
+                    border-radius: 5px;
+                }
+            }
+        }
     }
 }
 
