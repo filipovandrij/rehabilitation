@@ -50,7 +50,7 @@ const Main = (props: Props) => {
                             className="content_video"
                             url="https://www.youtube.com/embed/4Sxybl1VaRY"
                             title="YouTube video player"
-                        ></ReactPlayer>
+                        />
                     </div>
                 </section>
 

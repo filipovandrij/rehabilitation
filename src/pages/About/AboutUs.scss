@@ -1,0 +1,60 @@
+.about-us {
+    background-color: #001e3c;
+    color: white;
+
+    .title {
+        font-size: 30px;
+        color: #aee0fd;
+        text-decoration: underline;
+    }
+    section {
+        padding: 15px 0;
+    }
+
+    .inner-section-first {
+        display: flex;
+        justify-content: space-between;
+        .description {
+            margin: auto;
+        }
+    }
+
+    .inner-section-second {
+        .column-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .MuiPaper-root {
+            background-color: #13225c;
+            color: white;
+        }
+        .MuiTypography-h5 {
+            display: flex;
+            align-items: center;
+            .MuiSvgIcon-fontSizeLarge {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .inner-section-third {
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        .description-third {
+            margin: auto 0;
+        }
+        .looking-mri {
+            background-image: url('about-us.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 650px;
+        }
+    }
+}
