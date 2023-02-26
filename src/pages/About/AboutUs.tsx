@@ -229,7 +229,7 @@ const AboutUs = (props: Props) => {
                                 adjust the rehabilitation program.
                             </p>
                         </div>
-                        <div className="looking-mri"></div>
+                        <div className="image-div"></div>
                     </section>
                 </Container>
             </section>
