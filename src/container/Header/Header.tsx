@@ -17,12 +17,12 @@ const Header = (props: Props) => {
                     color="inherit"
                     aria-label="menu"
                 >
-                    <HealingIcon></HealingIcon>
+                    <HealingIcon />
                 </IconButton>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     Filipov Rehabilitation Center
                 </Typography>
-                <Menu></Menu>
+                <Menu />
             </Toolbar>
         </AppBar>
     )

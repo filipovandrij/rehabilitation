@@ -1,6 +1,7 @@
-import { Button, Link } from '@mui/material'
+import { Button } from '@mui/material'
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration'
 import './Menu.scss'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 const Menu = (props: Props) => {
@@ -11,19 +12,13 @@ const Menu = (props: Props) => {
                 <div className="dropdown_modal">
                     <ul>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                About us
-                            </Link>
+                            <Link to="/about-us">About us</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                News
-                            </Link>
+                            <Link to="/">News</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Histories of patients
-                            </Link>
+                            <Link to="/">Histories of patients</Link>
                         </li>
                     </ul>
                 </div>
@@ -33,34 +28,22 @@ const Menu = (props: Props) => {
                 <div className="dropdown_modal">
                     <ul>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Реабілітація для дорослих
-                            </Link>
+                            <Link to="/">Реабілітація для дорослих</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Лікувальні блокади
-                            </Link>
+                            <Link to="/">Лікувальні блокади</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Реабілітація для дітей
-                            </Link>
+                            <Link to="/">Реабілітація для дітей</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Фізеотерапія
-                            </Link>
+                            <Link to="/">Фізеотерапія</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Консультація лікарів
-                            </Link>
+                            <Link to="/">Консультація лікарів</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Діагностика
-                            </Link>
+                            <Link to="/">Діагностика</Link>
                         </li>
                     </ul>
                 </div>
@@ -70,32 +53,22 @@ const Menu = (props: Props) => {
                 <div className="dropdown_modal">
                     <ul>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Treatment of spine diseases
-                            </Link>
+                            <Link to="/">Treatment of spine diseases</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Treatment of joint diseases
-                            </Link>
+                            <Link to="/">Treatment of joint diseases</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Treatment of pain syndrome
-                            </Link>
+                            <Link to="/">Treatment of pain syndrome</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Children's rehabilitation
-                            </Link>
+                            <Link to="/">Children's rehabilitation</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
-                                Prevention and recovery
-                            </Link>
+                            <Link to="/">Prevention and recovery</Link>
                         </li>
                         <li>
-                            <Link underline="hover" color="inherit">
+                            <Link to="/">
                                 Treatment of diseases of the muscular system
                             </Link>
                         </li>
