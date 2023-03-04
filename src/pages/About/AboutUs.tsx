@@ -188,7 +188,7 @@ const AboutUs = (props: Props) => {
                                             component="div"
                                         >
                                             <CachedIcon fontSize="large" />
-                                            FRC KIDS
+                                            FRC RESTART
                                         </Typography>
                                         <Typography
                                             sx={{
