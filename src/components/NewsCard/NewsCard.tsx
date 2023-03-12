@@ -9,7 +9,8 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
 import './NewsCard.scss'
-import { useAppSelector } from '../../redux/hooks'
+import { useAppDispatch, useAppSelector } from '../../redux/hooks'
+import { addLike, removeLike } from '../../redux/likeReducer'
 
 type Props = {
     id: number
@@ -30,6 +31,8 @@ const NewsCard = ({
 }: Props) => {
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
 
+    const dispatch = useAppDispatch()
+
     return (
         <div className="container">
             <Container className="row-container">
@@ -38,7 +41,14 @@ const NewsCard = ({
                     <CardContent component="h3">{title}</CardContent>
                     <CardContent component="article">{description}</CardContent>
                     <div className="like-box">
-                        <IconButton aria-label="add to favorites">
+                        <IconButton
+                            aria-label="add to favorites"
+                            onClick={() =>
+                                isLiked
+                                    ? dispatch(removeLike(id))
+                                    : dispatch(addLike(id))
+                            }
+                        >
                             {isLiked ? (
                                 <FavoriteIcon color="primary" />
                             ) : (
