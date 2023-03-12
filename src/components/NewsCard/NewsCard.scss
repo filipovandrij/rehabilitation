@@ -1,3 +1,22 @@
 .container {
     background: #001e3c;
 }
+.news-card {
+    width: 300px;
+    height: auto;
+    margin-top: 15px;
+}
+.row-container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap-reverse;
+}
+
+.like-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .eye-count {
+        margin-left: 10px;
+    }
+}
