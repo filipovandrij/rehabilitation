@@ -24,6 +24,11 @@ const Menu = (props: Props) => {
                 </div>
             </Button>
             <Button className="btn">
+                <Link className="favorite-page" to="/Favorite">
+                    Favorite
+                </Link>
+            </Button>
+            <Button className="btn">
                 Services
                 <div className="dropdown_modal">
                     <ul>

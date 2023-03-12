@@ -6,6 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline'
 import AboutUs from '../../pages/About/AboutUs'
 import { Route, Routes } from 'react-router-dom'
 import News from '../../pages/News/News'
+import Favorite from '../../pages/Favorite/Favorite'
 
 type Props = {}
 const App = (props: Props) => {
@@ -17,6 +18,7 @@ const App = (props: Props) => {
                 <Route path="/" element={<Main />}></Route>
                 <Route path="about-us" element={<AboutUs />}></Route>
                 <Route path="/news" element={<News />}></Route>
+                <Route path="/favorite" element={<Favorite />}></Route>
             </Routes>
             <Footer />
         </StyledEngineProvider>

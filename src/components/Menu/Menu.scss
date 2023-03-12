@@ -44,6 +44,15 @@
     }
 }
 
+.favorite-page {
+    text-decoration: none;
+    color: #aee0fd;
+
+    &:active {
+        color: white;
+    }
+}
+
 .btn_сonsultation {
     margin-left: 30px;
 }
