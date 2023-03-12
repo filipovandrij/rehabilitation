@@ -6,60 +6,50 @@ import {
     IconButton,
 } from '@mui/material'
 import FavoriteIcon from '@mui/icons-material/Favorite'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
 import './NewsCard.scss'
-import newsCardsArray from '../../utils/mocks/newsCards'
-import { useState } from 'react'
+import { useAppSelector } from '../../redux/hooks'
 
-type Props = {}
+type Props = {
+    id: number
+    imgSrc: string
+    title: string
+    description: string
+    likeCount: number
+    watchCount: number
+}
 
-type LikeColor = 'grey' | 'red'
-const NewsCard = (props: Props) => {
-    const [colorLike, setColorLike] = useState<LikeColor>('grey')
-
-    const isLiked = () => {
-        if (colorLike === 'grey') {
-            setColorLike('red')
-        } else {
-            setColorLike('grey')
-        }
-    }
+const NewsCard = ({
+    id,
+    imgSrc,
+    title,
+    description,
+    likeCount,
+    watchCount,
+}: Props) => {
+    const isLiked = useAppSelector((state) => state.productsLikeState[id])
 
     return (
         <div className="container">
             <Container className="row-container">
-                {newsCardsArray.map(
-                    ({
-                        id,
-                        imgSrc,
-                        title,
-                        description,
-                        likeCount,
-                        watchCount,
-                    }) => (
-                        <Card className="news-card" key={id}>
-                            <CardMedia component="img" src={imgSrc}></CardMedia>
-                            <CardContent component="h3">{title}</CardContent>
-                            <CardContent component="article">
-                                {description}
-                            </CardContent>
-                            <div className="like-box">
-                                <IconButton
-                                    onClick={isLiked}
-                                    sx={{
-                                        color: colorLike,
-                                    }}
-                                    aria-label="add to favorites"
-                                >
-                                    <FavoriteIcon />
-                                </IconButton>
-                                {likeCount}
-                                <RemoveRedEyeIcon className="eye-count" />
-                                {watchCount}
-                            </div>
-                        </Card>
-                    )
-                )}
+                <Card className="news-card">
+                    <CardMedia component="img" src={imgSrc}></CardMedia>
+                    <CardContent component="h3">{title}</CardContent>
+                    <CardContent component="article">{description}</CardContent>
+                    <div className="like-box">
+                        <IconButton aria-label="add to favorites">
+                            {isLiked ? (
+                                <FavoriteIcon color="primary" />
+                            ) : (
+                                <FavoriteBorderIcon />
+                            )}
+                        </IconButton>
+                        {likeCount}
+                        <RemoveRedEyeIcon className="eye-count" />
+                        {watchCount}
+                    </div>
+                </Card>
             </Container>
         </div>
     )
