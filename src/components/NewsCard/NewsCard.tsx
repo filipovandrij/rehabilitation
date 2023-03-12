@@ -31,6 +31,8 @@ const NewsCard = ({
 }: Props) => {
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
 
+    console.log(isLiked)
+
     const dispatch = useAppDispatch()
 
     return (
@@ -43,11 +45,11 @@ const NewsCard = ({
                     <div className="like-box">
                         <IconButton
                             aria-label="add to favorites"
-                            onClick={() =>
+                            onClick={() => {
                                 isLiked
                                     ? dispatch(removeLike(id))
                                     : dispatch(addLike(id))
-                            }
+                            }}
                         >
                             {isLiked ? (
                                 <FavoriteIcon color="primary" />
