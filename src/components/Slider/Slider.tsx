@@ -4,6 +4,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import './Slider.css'
 import { Autoplay, Pagination, Navigation } from 'swiper'
+import { slides } from '../../utils'
 
 type Props = {}
 const Slider = (props: Props) => {
@@ -23,46 +24,12 @@ const Slider = (props: Props) => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                    <img src="/images/slide_one.jpg" alt="" />
-                    <p className="p_slide_one">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Atque quidem mollitia pariatur voluptatibus qui
-                        incidunt culpa illo magnam consectetur provident iusto,
-                        tempora alias. Aliquid accusamus officia beatae, eius
-                        voluptates eveniet.
-                    </p>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/images/slide_two.jpg" alt="" />
-                    <p className="p_slide_two">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Atque quidem mollitia pariatur voluptatibus qui
-                        incidunt culpa illo magnam consectetur provident iusto,
-                        tempora alias. Aliquid accusamus officia beatae, eius
-                        voluptates eveniet.
-                    </p>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/images/slide_thrie.jpg" alt="" />
-                    <p className="p_slide_thrie">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Atque quidem mollitia pariatur voluptatibus qui
-                        incidunt culpa illo magnam consectetur provident iusto,
-                        tempora alias. Aliquid accusamus officia beatae, eius
-                        voluptates eveniet.
-                    </p>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/images/slide_fouth.jpg" alt="" />
-                    <p className="p_slide_fouth">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Atque quidem mollitia pariatur voluptatibus qui
-                        incidunt culpa illo magnam consectetur provident iusto,
-                        tempora alias. Aliquid accusamus officia beatae, eius
-                        voluptates eveniet.
-                    </p>
-                </SwiperSlide>
+                {slides.map((s) => (
+                    <SwiperSlide key={s.key}>
+                        <img src={s.imageSrc} alt="" />
+                        <p className={s.className}>{s.description}</p>
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </>
     )

@@ -21,7 +21,7 @@ const Main = (props: Props) => {
     return (
         <>
             <main>
-                <Slider></Slider>
+                <Slider />
 
                 <section className="section_about_clinic">
                     <div className="container_about">
