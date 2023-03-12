@@ -5,25 +5,32 @@ import IconButton from '@mui/material/IconButton'
 import './Header.scss'
 import HealingIcon from '@mui/icons-material/Healing'
 import Menu from '../../components/Menu/Menu'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 const Header = (props: Props) => {
     return (
         <AppBar position="static" className="app-bar">
-            <Toolbar>
-                <IconButton
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                >
-                    <HealingIcon />
-                </IconButton>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    Filipov Rehabilitation Center
-                </Typography>
-                <Menu />
-            </Toolbar>
+            <Link className="main-link" to="/">
+                <Toolbar>
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                    >
+                        <HealingIcon />
+                    </IconButton>
+                    <Typography
+                        variant="h6"
+                        component="div"
+                        sx={{ flexGrow: 1 }}
+                    >
+                        Filipov Rehabilitation Center
+                    </Typography>
+                    <Menu />
+                </Toolbar>
+            </Link>
         </AppBar>
     )
 }
