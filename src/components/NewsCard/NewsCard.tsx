@@ -11,6 +11,7 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
 import './NewsCard.scss'
 import { useAppDispatch, useAppSelector } from '../../redux/hooks'
 import { addLike, removeLike } from '../../redux/likeReducer'
+import { useState } from 'react'
 
 type Props = {
     id: number
@@ -29,9 +30,19 @@ const NewsCard = ({
     likeCount,
     watchCount,
 }: Props) => {
-    const isLiked = useAppSelector((state) => state.productsLikeState[id])
+    let isLiked = useAppSelector((state) => state.productsLikeState[id])
 
     const dispatch = useAppDispatch()
+
+    const [likesCounter, setLikesCounter] = useState<number>(0)
+
+    const addNumberCount = (likesCounter: number) => {
+        setLikesCounter((prevState) => prevState + 1)
+    }
+
+    const removeNumberCount = (likesCounter: number) => {
+        setLikesCounter((prevState) => prevState - 1)
+    }
 
     return (
         <div className="container">
@@ -44,9 +55,13 @@ const NewsCard = ({
                         <IconButton
                             aria-label="add to favorites"
                             onClick={() => {
-                                isLiked
-                                    ? dispatch(removeLike(id))
-                                    : dispatch(addLike(id))
+                                if (isLiked == true) {
+                                    dispatch(removeLike(id))
+                                    removeNumberCount(1)
+                                } else {
+                                    dispatch(addLike(id))
+                                    addNumberCount(1)
+                                }
                             }}
                         >
                             {isLiked ? (
@@ -55,7 +70,7 @@ const NewsCard = ({
                                 <FavoriteBorderIcon />
                             )}
                         </IconButton>
-                        {likeCount}
+                        {likesCounter}
                         <RemoveRedEyeIcon className="eye-count" />
                         {watchCount}
                     </div>
