@@ -34,7 +34,7 @@ const NewsCard = ({
 
     const dispatch = useAppDispatch()
 
-    const [likesCounter, setLikesCounter] = useState<number>(0)
+    const [likesCounter, setLikesCounter] = useState<number>(likeCount)
 
     const addNumberCount = (likesCounter: number) => {
         setLikesCounter((prevState) => prevState + 1)
@@ -79,4 +79,5 @@ const NewsCard = ({
         </div>
     )
 }
+
 export default NewsCard
