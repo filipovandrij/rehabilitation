@@ -31,8 +31,6 @@ const NewsCard = ({
 }: Props) => {
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
 
-    console.log(isLiked)
-
     const dispatch = useAppDispatch()
 
     return (
