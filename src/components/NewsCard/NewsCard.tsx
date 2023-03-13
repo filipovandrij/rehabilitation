@@ -55,7 +55,7 @@ const NewsCard = ({
                         <IconButton
                             aria-label="add to favorites"
                             onClick={() => {
-                                if (isLiked == true) {
+                                if (isLiked) {
                                     dispatch(removeLike(id))
                                     removeNumberCount(1)
                                 } else {
