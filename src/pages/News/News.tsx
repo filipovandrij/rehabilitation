@@ -1,5 +1,4 @@
-import { Button, Container } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { Container } from '@mui/material'
 import NewsCard from '../../components/NewsCard/NewsCard'
 import newsCardsArray from '../../utils/mocks/newsCards'
 import './News.scss'
