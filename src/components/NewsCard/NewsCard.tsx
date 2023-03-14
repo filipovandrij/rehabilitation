@@ -48,8 +48,14 @@ const NewsCard = ({
         <div className="container">
             <Container className="row-container">
                 <Card className="news-card">
-                    <CardMedia component="img" src={imgSrc}></CardMedia>
-                    <CardContent component="h3">{title}</CardContent>
+                    <CardMedia
+                        className="title-img"
+                        component="img"
+                        src={imgSrc}
+                    ></CardMedia>
+                    <CardContent className="title" component="h2">
+                        {title}
+                    </CardContent>
                     <CardContent component="article">{description}</CardContent>
                     <div className="like-box">
                         <IconButton
@@ -67,11 +73,14 @@ const NewsCard = ({
                             {isLiked ? (
                                 <FavoriteIcon color="primary" />
                             ) : (
-                                <FavoriteBorderIcon />
+                                <FavoriteBorderIcon color="primary" />
                             )}
                         </IconButton>
                         {likesCounter}
-                        <RemoveRedEyeIcon className="eye-count" />
+                        <RemoveRedEyeIcon
+                            className="eye-count"
+                            color="primary"
+                        />
                         {watchCount}
                     </div>
                 </Card>

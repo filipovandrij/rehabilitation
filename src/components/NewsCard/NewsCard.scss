@@ -1,14 +1,30 @@
 .news-card {
     width: 300px;
-    height: auto;
+    height: 600px;
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-color: #13225c;
 }
 .row-container {
     display: flex;
     justify-content: space-around;
     flex-flow: wrap-reverse;
 }
+.title-img {
+    height: 200px;
+}
 
+.title {
+    height: 75px;
+    margin: 0 5px;
+    padding: 0 5px;
+    border-bottom: 3px solid white;
+    display: flex;
+    align-items: first baseline;
+}
 .like-box {
     display: flex;
     align-items: center;
