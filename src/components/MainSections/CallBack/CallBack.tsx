@@ -1,9 +1,33 @@
-import { Button, TextField } from '@mui/material'
+import { Button, styled, TextField } from '@mui/material'
 import PhoneIcon from '@mui/icons-material/Phone'
 import './CallBack.scss'
 
 type Props = {}
 const CallBack = (props: Props) => {
+    const CssTextField = styled(TextField)({
+        '& label.Mui-focused': {
+            color: 'white',
+            //color of placeholder text active
+        },
+        '& .MuiInput-underline:after': {
+            borderBottomColor: 'white',
+        },
+        '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+                borderColor: 'white',
+                //pasive border color
+            },
+            '&:hover fieldset': {
+                borderColor: 'white',
+                //hover border color
+            },
+            '&.Mui-focused fieldset': {
+                borderColor: 'white',
+                //active border color
+            },
+        },
+    })
+
     return (
         <section className="call_back">
             <hr />
@@ -14,16 +38,14 @@ const CallBack = (props: Props) => {
                 Підбір лікарями комплексної індивідуальної програми відновлення
             </p>
             <form action="#" className="call-back-form">
-                <TextField
+                <CssTextField
                     className="call-back-text-field"
                     fullWidth
-                    id="outlined-basic"
                     label="Ваше ім'я"
                     variant="outlined"
                 />
-                <TextField
+                <CssTextField
                     fullWidth
-                    id="outlined-basic"
                     label="Номер телефону"
                     variant="outlined"
                 />
