@@ -1,4 +1,5 @@
-import { Container } from '@mui/material'
+import { Button, Container } from '@mui/material'
+import { Link } from 'react-router-dom'
 import NewsCard from '../../components/NewsCard/NewsCard'
 import newsCardsArray from '../../utils/mocks/newsCards'
 import './News.scss'
@@ -23,7 +24,7 @@ const News = (props: Props) => {
                             description={description}
                             likeCount={likeCount}
                             watchCount={watchCount}
-                        />
+                        ></NewsCard>
                     )
                 )}
             </Container>

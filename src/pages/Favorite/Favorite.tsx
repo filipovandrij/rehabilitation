@@ -1,5 +1,5 @@
 type Props = {}
 const Favorite = (props: Props) => {
-    return <div>Favorite NewsCards</div>
+    return <></>
 }
 export default Favorite

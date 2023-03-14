@@ -7,8 +7,10 @@ import AboutUs from '../../pages/About/AboutUs'
 import { Route, Routes } from 'react-router-dom'
 import News from '../../pages/News/News'
 import Favorite from '../../pages/Favorite/Favorite'
+import { useState } from 'react'
 
 type Props = {}
+
 const App = (props: Props) => {
     return (
         <StyledEngineProvider injectFirst>

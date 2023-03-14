@@ -30,7 +30,7 @@ const NewsCard = ({
     likeCount,
     watchCount,
 }: Props) => {
-    let isLiked = useAppSelector((state) => state.productsLikeState[id])
+    const isLiked = useAppSelector((state) => state.productsLikeState[id])
 
     const dispatch = useAppDispatch()
 

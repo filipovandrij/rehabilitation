@@ -60,6 +60,14 @@ const newsCardsArray:Description[] = [
 
 ]
 
+export const getProductsNews = (array:Description[]) => 
+array.reduce(
+    (object,product) => ({
+        ...object,
+        [product.id]:product,
+    }),
+    {}
+    )
 
 
     export default newsCardsArray
