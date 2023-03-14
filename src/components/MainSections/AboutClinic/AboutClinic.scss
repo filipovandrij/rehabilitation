@@ -1,0 +1,21 @@
+.section_about_clinic {
+    // color: white;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    article {
+        width: 80%;
+    }
+    .about_video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60%;
+    }
+    .container_about {
+        margin: auto 15px;
+    }
+}
