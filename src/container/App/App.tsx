@@ -7,6 +7,7 @@ import AboutUs from '../../pages/About/AboutUs'
 import { Route, Routes } from 'react-router-dom'
 import News from '../../pages/News/News'
 import Favorite from '../../pages/Favorite/Favorite'
+import HistoriesOfPatients from '../../pages/HistoriesOfPatients/HistoriesOfPatients'
 
 type Props = {}
 
@@ -20,6 +21,10 @@ const App = (props: Props) => {
                 <Route path="about-us" element={<AboutUs />}></Route>
                 <Route path="/news" element={<News />}></Route>
                 <Route path="/favorite" element={<Favorite />}></Route>
+                <Route
+                    path="/comments"
+                    element={<HistoriesOfPatients />}
+                ></Route>
             </Routes>
             <Footer />
         </StyledEngineProvider>

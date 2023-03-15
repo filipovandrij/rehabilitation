@@ -1,6 +1,9 @@
 .app-bar {
     background-color: #001e3c;
     padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .slider {

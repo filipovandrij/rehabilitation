@@ -18,16 +18,18 @@ const Menu = (props: Props) => {
                             <Link to="/news">News</Link>
                         </li>
                         <li>
-                            <Link to="/">Histories of patients</Link>
+                            <Link to="/comments">Histories of patients</Link>
+                        </li>
+                        <li>
+                            <Link to="/">Price</Link>
+                        </li>
+                        <li>
+                            <Link to="/">Our Team</Link>
                         </li>
                     </ul>
                 </div>
             </Button>
-            <Button className="btn">
-                <Link className="favorite-page" to="/Favorite">
-                    Favorite
-                </Link>
-            </Button>
+
             <Button className="btn">
                 Services
                 <div className="dropdown_modal">
@@ -80,9 +82,12 @@ const Menu = (props: Props) => {
                     </ul>
                 </div>
             </Button>
-            <Button className="btn">Price</Button>
-            <Button className="btn">Our Team</Button>
             <Button className="btn">Contact</Button>
+            <Button className="btn">
+                <Link className="favorite-page" to="/Favorite">
+                    Favorite
+                </Link>
+            </Button>
             <Button
                 className="btn_сonsultation"
                 variant="contained"
