@@ -1,6 +1,4 @@
-import { CardContent, Card, Typography, Link } from '@mui/material'
 import './AboutTreatment.scss'
-import DoneIcon from '@mui/icons-material/Done'
 import CardTreatment from './CardTreatment/CardTreatment'
 
 type Props = {}

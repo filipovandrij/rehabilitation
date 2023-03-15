@@ -1,5 +1,4 @@
 import { Container } from '@mui/material'
-import NewsCard from '../../components/NewsCard/NewsCard'
 import { useAppSelector } from '../../redux/hooks'
 
 type Props = {}
