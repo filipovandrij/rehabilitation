@@ -1,20 +1,13 @@
 import { Button } from '@mui/material'
 import ReactPlayer from 'react-player'
 import './AboutClinic.scss'
-import FormatIndentIncreaseOutlinedIcon from '@mui/icons-material/FormatIndentIncreaseOutlined'
 
 type Props = {}
 const AboutClinic = (props: Props) => {
     return (
         <section className="section_about_clinic">
             <div className="container_about">
-                <h3 className="first">
-                    <FormatIndentIncreaseOutlinedIcon
-                        fontSize="large"
-                        className="h3_icon"
-                    />
-                    CLINIC
-                </h3>
+                <h3 className="first">CLINIC</h3>
                 <p>вислів</p>
                 <article>
                     ARTICLE Lorem ipsum dolor, sit amet consectetur adipisicing

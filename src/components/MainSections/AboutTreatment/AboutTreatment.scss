@@ -3,4 +3,13 @@
     hr {
         border: 3px solid white;
     }
+    .cart_text_bg {
+        height: auto;
+        width: 400px;
+        .MuiTypography-h5 {
+            border-bottom: 2px solid white;
+            height: 100%;
+            display: flex;
+        }
+    }
 }

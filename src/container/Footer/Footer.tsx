@@ -3,6 +3,7 @@ import {
     Container,
     IconButton,
     Link,
+    styled,
     TextField,
     Typography,
 } from '@mui/material'
@@ -11,6 +12,29 @@ import './Footer.scss'
 
 type Props = {}
 const Footer = (props: Props) => {
+    const CssTextField = styled(TextField)({
+        '& label.Mui-focused': {
+            color: 'white',
+            //color of placeholder text active
+        },
+        '& .MuiInput-underline:after': {
+            borderBottomColor: 'white',
+        },
+        '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+                borderColor: 'white',
+                //pasive border color
+            },
+            '&:hover fieldset': {
+                borderColor: 'white',
+                //hover border color
+            },
+            '&.Mui-focused fieldset': {
+                borderColor: 'white',
+                //active border color
+            },
+        },
+    })
     return (
         <footer>
             <Container maxWidth="xl">
@@ -56,12 +80,12 @@ const Footer = (props: Props) => {
                         <div className="email_btn">
                             <h2>RECIVE EMAIL UPDATES</h2>
 
-                            <TextField
+                            <CssTextField
                                 fullWidth
                                 id="outlined-basic"
                                 label="Your Email Address"
                                 variant="outlined"
-                            ></TextField>
+                            ></CssTextField>
                             <Button
                                 sx={{ marginTop: 2 }}
                                 size="large"

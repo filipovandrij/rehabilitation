@@ -27,6 +27,22 @@ const CallBack = (props: Props) => {
             },
         },
     })
+    // const styles = {
+    //     'input-label': {
+    //       textOverflow: 'ellipsis',
+    //       whiteSpace: 'nowrap',
+    //       overflow: 'hidden',
+    //       width: '100%',
+    //       color: 'red'
+    //     },
+
+    //     'input': {
+    //       '&::placeholder': {
+    //         textOverflow: 'ellipsis !important',
+    //         color: 'blue'
+    //       }
+    //     }
+    //   };
 
     return (
         <section className="call_back">
