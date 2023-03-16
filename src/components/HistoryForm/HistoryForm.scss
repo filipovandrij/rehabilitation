@@ -1,0 +1,50 @@
+.comment-container {
+    background-color: #001e3c;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 500px;
+    h3 {
+        margin: 10px 0 0;
+        color: white;
+    }
+
+    .text-area::placeholder {
+        font-size: 15px;
+    }
+
+    .close-btn {
+        margin-bottom: 30px;
+    }
+}
+
+.test {
+    .MuiOutlinedInput-root {
+        &:hover fieldset {
+            border-color: #1976d2;
+        }
+    }
+}
+
+.row {
+    display: flex;
+    fieldset {
+        border-color: white;
+        &:hover {
+            border-color: white;
+        }
+    }
+
+    .your-mail {
+        margin-left: 10px;
+    }
+
+    .MuiInputLabel-root {
+        color: white;
+    }
+    input[type='text'] {
+        color: white;
+    }
+}
