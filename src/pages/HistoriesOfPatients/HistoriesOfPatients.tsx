@@ -2,7 +2,6 @@ import { Card, CardContent, Container, Typography } from '@mui/material'
 import { useState } from 'react'
 import HistoryForm from '../../components/HistoryForm/HistoryForm'
 import arrReviews from '../../utils/mocks/arrReviews'
-import './HistoriesOfPatients.scss'
 
 type Props = {}
 
