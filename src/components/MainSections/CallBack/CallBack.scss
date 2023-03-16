@@ -14,6 +14,26 @@
     width: 30%;
 }
 
-input[type='text'] {
-    color: white;
+.right {
+    margin-left: 10px;
+}
+
+.text-field {
+    .MuiOutlinedInput-root {
+        &:hover fieldset {
+            border-color: #1976d2;
+        }
+    }
+    fieldset {
+        border-color: white;
+        &:hover {
+            border-color: white;
+        }
+    }
+    .MuiInputLabel-root {
+        color: white;
+    }
+    input[type='text'] {
+        color: white;
+    }
 }

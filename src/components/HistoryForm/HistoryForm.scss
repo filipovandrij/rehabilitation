@@ -20,31 +20,27 @@
     }
 }
 
-.test {
+.text-field {
     .MuiOutlinedInput-root {
         &:hover fieldset {
             border-color: #1976d2;
         }
     }
-}
-
-.row {
-    display: flex;
     fieldset {
         border-color: white;
         &:hover {
             border-color: white;
         }
     }
-
-    .your-mail {
-        margin-left: 10px;
-    }
-
     .MuiInputLabel-root {
         color: white;
     }
-    input[type='text'] {
-        color: white;
+}
+
+.row {
+    display: flex;
+
+    .your-mail {
+        margin-left: 10px;
     }
 }

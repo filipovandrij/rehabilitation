@@ -37,7 +37,7 @@ const HistoryForm = ({
                         <h3>Please leave a history</h3>
                         <div className="row">
                             <TextField
-                                className="test your-name"
+                                className="text-field your-name"
                                 fullWidth
                                 value={newReview.name}
                                 onChange={handleName}
@@ -45,7 +45,7 @@ const HistoryForm = ({
                                 variant="outlined"
                             />
                             <TextField
-                                className="test your-mail"
+                                className="text-field your-mail"
                                 fullWidth
                                 value={newReview.mail}
                                 onChange={handleMail}
