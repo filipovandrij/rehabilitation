@@ -4,8 +4,11 @@ import likeReducer from "./likeReducer";
 export const store = configureStore({
     reducer: {
         productsLikeState: likeReducer,
+        
     },
+    
 })
+
 
 export type RootState = ReturnType<typeof store.getState>
 

@@ -7,8 +7,12 @@ import HealingIcon from '@mui/icons-material/Healing'
 import Menu from '../../components/Menu/Menu'
 import { Link } from 'react-router-dom'
 
-type Props = {}
-const Header = (props: Props) => {
+type Props = {
+    favoriteCardNews: {
+        [id: number]: number
+    }
+}
+const Header = ({ favoriteCardNews }: Props) => {
     return (
         <AppBar position="static" className="app-bar">
             <Link className="main-link" to="/">
@@ -28,7 +32,7 @@ const Header = (props: Props) => {
                     >
                         Filipov Rehabilitation Center
                     </Typography>
-                    <Menu />
+                    <Menu favoriteCardNews={favoriteCardNews} />
                 </Toolbar>
             </Link>
         </AppBar>

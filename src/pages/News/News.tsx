@@ -2,8 +2,11 @@ import { Container } from '@mui/material'
 import NewsCard from '../../components/NewsCard/NewsCard'
 import newsCardsArray from '../../utils/mocks/newsCards'
 import './News.scss'
-type Props = {}
-const News = (props: Props) => {
+type Props = {
+    addProductToCart: (id: number, count: number) => void
+    removeProductToCart: (id: number, count: number) => void
+}
+const News = ({ removeProductToCart, addProductToCart }: Props) => {
     return (
         <>
             <Container className="row-container">
@@ -17,6 +20,8 @@ const News = (props: Props) => {
                         watchCount,
                     }) => (
                         <NewsCard
+                            removeProductToCart={removeProductToCart}
+                            addProductToCart={addProductToCart}
                             key={id}
                             id={id}
                             imgSrc={imgSrc}

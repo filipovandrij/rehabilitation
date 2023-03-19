@@ -8,8 +8,10 @@ type Props = {
     description: string
     likeCount: number
     watchCount: number
+    removeProductToCart: (id: number, count: number) => void
 }
 const FavoriteCard = ({
+    removeProductToCart,
     id,
     imgSrc,
     title,
@@ -21,6 +23,7 @@ const FavoriteCard = ({
     if (isLiked) {
         return (
             <FavoriteCardItem
+                removeProductToCart={removeProductToCart}
                 id={id}
                 imgSrc={imgSrc}
                 title={title}

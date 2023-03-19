@@ -10,8 +10,15 @@ type Props = {
     description: string
     likeCount: number
     watchCount: number
+    removeProductToCart: (id: number, count: number) => void
 }
-const FavoriteCardItem = ({ id, imgSrc, title, description }: Props) => {
+const FavoriteCardItem = ({
+    removeProductToCart,
+    id,
+    imgSrc,
+    title,
+    description,
+}: Props) => {
     const dispatch = useAppDispatch()
     return (
         <>
@@ -30,7 +37,10 @@ const FavoriteCardItem = ({ id, imgSrc, title, description }: Props) => {
                     <div className="unlike-btn">
                         <Button
                             variant="contained"
-                            onClick={() => dispatch(removeLike(id))}
+                            onClick={() => (
+                                dispatch(removeLike(id)),
+                                removeProductToCart(id, 1)
+                            )}
                         >
                             Удалить
                         </Button>

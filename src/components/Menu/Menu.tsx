@@ -2,10 +2,14 @@ import { Button } from '@mui/material'
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration'
 import './Menu.scss'
 import { Link } from 'react-router-dom'
-import FavoriteTotalAdd from '../FavoriteTotalAdd'
+import FavoriteTotalAdd from '../FavoriteCard/FavoriteTotalAdd'
 
-type Props = {}
-const Menu = (props: Props) => {
+type Props = {
+    favoriteCardNews: {
+        [id: number]: number
+    }
+}
+const Menu = ({ favoriteCardNews }: Props) => {
     return (
         <>
             <Button className="btn">
@@ -86,7 +90,8 @@ const Menu = (props: Props) => {
             <Button className="btn">Contact</Button>
             <Link className="favorite-page" to="/Favorite">
                 <Button className="btn">
-                    Favorite: <FavoriteTotalAdd />
+                    Favorite:{' '}
+                    <FavoriteTotalAdd favoriteCardNews={favoriteCardNews} />
                 </Button>
             </Link>
             <Button

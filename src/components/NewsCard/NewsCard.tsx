@@ -20,9 +20,13 @@ type Props = {
     description: string
     likeCount: number
     watchCount: number
+    removeProductToCart: (id: number, count: number) => void
+    addProductToCart: (id: number, count: number) => void
 }
 
 const NewsCard = ({
+    removeProductToCart,
+    addProductToCart,
     id,
     imgSrc,
     title,
@@ -64,9 +68,11 @@ const NewsCard = ({
                                 if (isLiked) {
                                     dispatch(removeLike(id))
                                     removeNumberCount(1)
+                                    removeProductToCart(id, 1)
                                 } else {
                                     dispatch(addLike(id))
                                     addNumberCount(1)
+                                    addProductToCart(id, 1)
                                 }
                             }}
                         >
