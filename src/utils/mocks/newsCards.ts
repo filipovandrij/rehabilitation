@@ -15,7 +15,7 @@ const newsCardsArray:Description[] = [
         title:'Injections against pain',
         description:`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eligendi aliquam vel repellat ipsam reprehenderit quis, nesciunt ab provident autem est eaque libero adipisci quisquam illum natus! Libero, molestias nesciunt!`,
     likeCount:123,
-    watchCount:1345,
+    watchCount:131235,
     },
     {
         id:2,
@@ -23,7 +23,7 @@ const newsCardsArray:Description[] = [
         title:'5 questions about electroneuromyography',
         description:`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eligendi aliquam vel repellat ipsam reprehenderit quis, nesciunt ab provident autem est eaque libero adipisci quisquam illum natus! Libero, molestias nesciunt!`,
     likeCount:5434,
-    watchCount:1345,
+    watchCount:1124345,
     },
     {
         id:3,
@@ -31,7 +31,7 @@ const newsCardsArray:Description[] = [
         title:'How to cure knee pain?',
         description:`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eligendi aliquam vel repellat ipsam reprehenderit quis, nesciunt ab provident autem est eaque libero adipisci quisquam illum natus! Libero, molestias nesciunt!`,
     likeCount:123,
-    watchCount:1345,
+    watchCount:4513,
     },
     {
         id:4,
@@ -39,7 +39,7 @@ const newsCardsArray:Description[] = [
         title:'The foundation of the foundations',
         description:`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eligendi aliquam vel repellat ipsam reprehenderit quis, nesciunt ab provident autem est eaque libero adipisci quisquam illum natus! Libero, molestias nesciunt!`,
     likeCount:3243,
-    watchCount:1345,
+    watchCount:1312345,
     },
     {
         id:5,
@@ -47,7 +47,7 @@ const newsCardsArray:Description[] = [
         title:'The art of recovery',
         description:`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eligendi aliquam vel repellat ipsam reprehenderit quis, nesciunt ab provident autem est eaque libero adipisci quisquam illum natus! Libero, molestias nesciunt!`,
     likeCount:123,
-    watchCount:1345,
+    watchCount:131145,
     },
     {
         id:6,
@@ -55,7 +55,7 @@ const newsCardsArray:Description[] = [
         title:'Medical fitness',
         description:`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eligendi aliquam vel repellat ipsam reprehenderit quis, nesciunt ab provident autem est eaque libero adipisci quisquam illum natus! Libero, molestias nesciunt!`,
     likeCount:141,
-    watchCount:1345,
+    watchCount:13145,
     },
 
 ]
