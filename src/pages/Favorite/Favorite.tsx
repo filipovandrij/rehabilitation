@@ -1,16 +1,24 @@
 import { Container } from '@mui/material'
-import { useAppSelector } from '../../redux/hooks'
+import FavoriteCard from '../../components/FavoriteCard/FavoriteCard'
+import newsCardsArray from '../../utils/mocks/newsCards'
 
 type Props = {}
 const Favorite = (props: Props) => {
-    const selector = useAppSelector((state) => state.productsLikeState)
-
-    console.log(selector)
-
     return (
-        <>
-            <Container>favourite</Container>
-        </>
+        <Container>
+            {newsCardsArray.map(
+                ({ id, imgSrc, title, description, likeCount, watchCount }) => (
+                    <FavoriteCard
+                        id={id}
+                        imgSrc={imgSrc}
+                        title={title}
+                        description={description}
+                        likeCount={likeCount}
+                        watchCount={watchCount}
+                    />
+                )
+            )}
+        </Container>
     )
 }
 export default Favorite

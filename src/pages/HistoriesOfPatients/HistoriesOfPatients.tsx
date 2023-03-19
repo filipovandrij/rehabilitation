@@ -8,8 +8,6 @@ type Props = {}
 const HistoriesOfPatients = (props: Props) => {
     const [reviews, setReviews] = useState(arrReviews)
 
-    console.log(reviews)
-
     const [newReview, setNewReview] = useState({
         mail: '',
         name: '',
