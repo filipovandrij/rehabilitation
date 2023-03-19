@@ -17,6 +17,7 @@ const News = (props: Props) => {
                         watchCount,
                     }) => (
                         <NewsCard
+                            key={id}
                             id={id}
                             imgSrc={imgSrc}
                             title={title}
