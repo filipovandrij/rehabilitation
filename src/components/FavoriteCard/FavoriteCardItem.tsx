@@ -37,10 +37,10 @@ const FavoriteCardItem = ({
                     <div className="unlike-btn">
                         <Button
                             variant="contained"
-                            onClick={() => (
-                                dispatch(removeLike(id)),
+                            onClick={() => {
+                                dispatch(removeLike(id))
                                 removeProductToCart(id, 1)
-                            )}
+                            }}
                         >
                             Удалить
                         </Button>
