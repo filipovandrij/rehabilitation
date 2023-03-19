@@ -1,0 +1,15 @@
+.container-card {
+    color: white;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .description-card {
+        margin-left: 20px;
+    }
+}

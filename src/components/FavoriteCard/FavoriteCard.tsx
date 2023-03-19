@@ -1,5 +1,5 @@
 import { useAppSelector } from '../../redux/hooks'
-import NewsCard from '../NewsCard/NewsCard'
+import FavoriteCardItem from './FavoriteCardItem'
 
 type Props = {
     id: number
@@ -18,10 +18,9 @@ const FavoriteCard = ({
     watchCount,
 }: Props) => {
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
-    console.log(isLiked)
     if (isLiked) {
         return (
-            <NewsCard
+            <FavoriteCardItem
                 id={id}
                 imgSrc={imgSrc}
                 title={title}
