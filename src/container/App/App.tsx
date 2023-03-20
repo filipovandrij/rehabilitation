@@ -9,6 +9,7 @@ import News from '../../pages/News/News'
 import Favorite from '../../pages/Favorite/Favorite'
 import HistoriesOfPatients from '../../pages/HistoriesOfPatients/HistoriesOfPatients'
 import { useState } from 'react'
+import Price from '../../pages/Price/Price'
 
 type Props = {}
 type FavoriteCardNews = {
@@ -37,8 +38,8 @@ const App = (props: Props) => {
             <CssBaseline />
             <Header favoriteCardNews={favoriteCardNews} />
             <Routes>
-                <Route path="/" element={<Main />}></Route>
-                <Route path="about-us" element={<AboutUs />}></Route>
+                <Route path="/" element={<Main />} />
+                <Route path="about-us" element={<AboutUs />} />
                 <Route
                     path="/news"
                     element={
@@ -47,17 +48,15 @@ const App = (props: Props) => {
                             addProductToCart={addProductToCart}
                         />
                     }
-                ></Route>
+                />
                 <Route
                     path="/favorite"
                     element={
                         <Favorite removeProductToCart={removeProductToCart} />
                     }
-                ></Route>
-                <Route
-                    path="/comments"
-                    element={<HistoriesOfPatients />}
-                ></Route>
+                />
+                <Route path="/comments" element={<HistoriesOfPatients />} />
+                <Route path="/price" element={<Price />} />
             </Routes>
             <Footer />
         </StyledEngineProvider>

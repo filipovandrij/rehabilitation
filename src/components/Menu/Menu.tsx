@@ -26,7 +26,7 @@ const Menu = ({ favoriteCardNews }: Props) => {
                             <Link to="/comments">Histories of patients</Link>
                         </li>
                         <li>
-                            <Link to="/">Price</Link>
+                            <Link to="/price">Price</Link>
                         </li>
                         <li>
                             <Link to="/">Our Team</Link>

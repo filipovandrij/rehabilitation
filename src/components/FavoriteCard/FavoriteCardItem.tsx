@@ -31,8 +31,7 @@ const FavoriteCardItem = ({
                         <h3>{title}</h3>
                     </div>
                     <div className="descripton-text">
-                        {' '}
-                        <p>{description}</p>{' '}
+                        <p>{description}</p>
                     </div>
                     <div className="unlike-btn">
                         <Button
