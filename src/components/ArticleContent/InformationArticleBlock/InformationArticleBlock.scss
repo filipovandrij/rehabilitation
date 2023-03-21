@@ -1,11 +1,12 @@
 .background-block {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #13225c;
     color: white;
     padding: 70px 0;
-    margin: 20px 0;
+    margin: 60px 0 20px;
     div {
         width: 20%;
         display: flex;
@@ -20,4 +21,9 @@
 .MuiSvgIcon-fontSizeLarge {
     width: 70px;
     height: 70px;
+}
+
+.title-of-box {
+    position: absolute;
+    top: -10px;
 }

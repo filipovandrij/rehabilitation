@@ -30,6 +30,7 @@ const InformationArticleBlock = (props: Props) => {
                     <AccessibleIcon fontSize="large" />
                     <p>Evidence-based methods of rehabilitation</p>
                 </div>
+                <h3 className="title-of-box">Rehabilitation in FRC is:</h3>
             </section>
         </>
     )
