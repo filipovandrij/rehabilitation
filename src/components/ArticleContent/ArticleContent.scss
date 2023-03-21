@@ -1,3 +1,36 @@
-.main-container {
+.main-title-container {
     background-color: #13225c;
+    color: white;
+}
+
+.inner-title-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    img {
+        background-color: white;
+        border-radius: 10px;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.description-container {
+    color: white;
+    .info-box {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 60%;
+            background-color: white;
+            border-radius: 10px;
+        }
+        p {
+            margin-right: 30px;
+            width: 30%;
+            font-size: 15px;
+        }
+    }
 }
