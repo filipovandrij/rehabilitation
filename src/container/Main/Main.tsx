@@ -7,9 +7,9 @@ import Moving from '../../components/MainSections/Moving/Moving'
 import AboutTreatment from '../../components/MainSections/AboutTreatment/AboutTreatment'
 import Recovery from '../../components/MainSections/Recovery/Recovery'
 import './Main.scss'
-type Props = {}
+type Props = { changeToArtrouse: (enterLink: string) => void }
 
-const Main = (props: Props) => {
+const Main = ({ changeToArtrouse }: Props) => {
     return (
         <>
             <main>
@@ -18,7 +18,7 @@ const Main = (props: Props) => {
 
                 <Container maxWidth="xl">
                     <CallBack />
-                    <AboutSetvices />
+                    <AboutSetvices changeToArtrouse={changeToArtrouse} />
                 </Container>
                 <Moving />
                 <Container maxWidth="xl">

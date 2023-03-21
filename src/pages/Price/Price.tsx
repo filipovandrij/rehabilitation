@@ -3,8 +3,8 @@ import PriceContent from '../../components/PriceContent/PriceContent'
 import PriceMainList from '../../components/PriceContent/PriceContentList/PriceMainList'
 import priceArr from '../../utils/mocks/priceArr'
 
-type Props = {}
-const Price = (props: Props) => {
+type Props = { changeToArtrouse: (enterLink: string) => void }
+const Price = ({ changeToArtrouse }: Props) => {
     const [changeRehubBtn, setChangeRehubBtn] = useState<boolean>()
     const clickRehubBtn = (changeRehubBtn: boolean) => {
         setChangeRehubBtn((prevState) => !prevState)
@@ -27,6 +27,7 @@ const Price = (props: Props) => {
     return (
         <>
             <PriceMainList
+                changeToArtrouse={changeToArtrouse}
                 clickConsultationBtn={clickConsultationBtn}
                 clickRehubBtn={clickRehubBtn}
                 clickChildrenBtn={clickChildrenBtn}

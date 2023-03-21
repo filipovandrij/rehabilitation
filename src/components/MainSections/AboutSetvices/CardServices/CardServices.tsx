@@ -1,8 +1,11 @@
 import { Card, CardContent, CardMedia, Link, Typography } from '@mui/material'
+import { NavLink } from 'react-router-dom'
 import servicesCard from '../../../../utils/mocks/servicesCard.mock'
 
-type Props = {}
-const CardServices = (props: Props) => {
+type Props = {
+    changeToArtrouse: (enterLink: string) => void
+}
+const CardServices = ({ changeToArtrouse }: Props) => {
     return (
         <>
             {servicesCard.map(
@@ -24,14 +27,24 @@ const CardServices = (props: Props) => {
                             <Typography variant="body2" color="text.secondary">
                                 <ul>
                                     <li>
-                                        <Link href="#" underline="always">
+                                        <NavLink
+                                            onClick={() =>
+                                                changeToArtrouse(link1)
+                                            }
+                                            to="/article"
+                                        >
                                             {link1}
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link href="#" underline="always">
+                                        <NavLink
+                                            to="/article"
+                                            onClick={() =>
+                                                changeToArtrouse(link2)
+                                            }
+                                        >
                                             {link2}
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
                                         <Link href="#" underline="always">

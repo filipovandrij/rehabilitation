@@ -4,6 +4,7 @@ import AboutSetvices from '../../MainSections/AboutSetvices/AboutSetvices'
 import './PriceMainList.scss'
 
 type Props = {
+    changeToArtrouse: (enterLink: string) => void
     clickConsultationBtn: (changeConsultationBtn: boolean) => void
     clickRehubBtn: (changeRehubBtn: boolean) => void
     clickChildrenBtn: (changeChildrenBtn: boolean) => void
@@ -14,6 +15,7 @@ type Props = {
     changeConsultationBtn?: boolean
 }
 const PriceMainList = ({
+    changeToArtrouse,
     changeRehubBtn,
     changePhysiotherapyBtn,
     changeChildrenBtn,
@@ -25,7 +27,7 @@ const PriceMainList = ({
 }: Props) => {
     return (
         <Container maxWidth="xl">
-            <AboutSetvices />
+            <AboutSetvices changeToArtrouse={changeToArtrouse} />
             <h3>PRICES FOR SERVICES</h3>
             <section className="show-price-container">
                 <Button
