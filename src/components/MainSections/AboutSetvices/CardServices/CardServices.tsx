@@ -1,5 +1,6 @@
-import { Card, CardContent, CardMedia, Link, Typography } from '@mui/material'
+import { Card, CardContent, CardMedia, Typography } from '@mui/material'
 import { NavLink } from 'react-router-dom'
+import './CardServices.scss'
 import servicesCard from '../../../../utils/mocks/servicesCard.mock'
 
 type Props = {
@@ -10,7 +11,10 @@ const CardServices = ({ changeToArtrouse }: Props) => {
         <>
             {servicesCard.map(
                 ({ id, imgSrc, title, link1, link2, link3, link4, link5 }) => (
-                    <Card key={id} sx={{ minWidth: 400, marginTop: 5 }}>
+                    <Card
+                        key={id}
+                        sx={{ height: 'auto', width: 400, marginTop: 5 }}
+                    >
                         <CardMedia
                             sx={{ height: 140 }}
                             image={imgSrc}
@@ -24,8 +28,12 @@ const CardServices = ({ changeToArtrouse }: Props) => {
                             >
                                 {title}
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                <ul>
+                            <Typography
+                                sx={{ height: 250 }}
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                <ul className="list-nav-link">
                                     <li>
                                         <NavLink
                                             onClick={() =>

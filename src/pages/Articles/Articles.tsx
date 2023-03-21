@@ -5,7 +5,6 @@ type Props = {
     cardsOfArtecles: string
 }
 const Articles = ({ cardsOfArtecles }: Props) => {
-    console.log(cardsOfArtecles)
     return (
         <>
             {article.map(({ title, description }) =>

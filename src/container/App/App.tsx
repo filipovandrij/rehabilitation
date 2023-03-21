@@ -34,7 +34,7 @@ const App = (props: Props) => {
         }))
     }
 
-    const [cardsOfArtecles, setCardOfArtouse] = useState<string>('change')
+    const [cardsOfArtecles, setCardOfArtouse] = useState<string>('')
 
     const changeToArtrouse = (enterLink: string) => {
         setCardOfArtouse(enterLink)

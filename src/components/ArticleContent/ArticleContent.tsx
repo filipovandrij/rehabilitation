@@ -33,7 +33,6 @@ const ArticleContent = ({ title, description }: Props) => {
                     </p>
                 </div>
                 <CallBack />
-                <h3>Title 1</h3>
 
                 <div className="info-box">
                     <p>
