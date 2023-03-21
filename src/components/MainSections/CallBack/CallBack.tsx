@@ -8,26 +8,26 @@ const CallBack = (props: Props) => {
         <section className="call_back">
             <hr />
             <h3>
-                <PhoneIcon /> Зворотній зв'зок
+                <PhoneIcon /> Callback
             </h3>
             <p>
-                Підбір лікарями комплексної індивідуальної програми відновлення
+                Selection of doctors for a complex individual recovery program
             </p>
             <form action="#" className="call-back-form">
                 <TextField
                     className="text-field"
                     fullWidth
-                    label="Ваше ім'я"
+                    label="Name"
                     variant="outlined"
                 />
                 <TextField
                     className="right text-field"
                     fullWidth
-                    label="Номер телефону"
+                    label="Phone number"
                     variant="outlined"
                 />
                 <Button className="call-back-btn" variant="contained">
-                    Залишити заявку
+                    Leave a request
                 </Button>
             </form>
             <hr />

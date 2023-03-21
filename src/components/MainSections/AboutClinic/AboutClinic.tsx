@@ -7,15 +7,14 @@ const AboutClinic = (props: Props) => {
     return (
         <section className="section_about_clinic">
             <div className="container_about">
-                <h3 className="first">CLINIC</h3>
-                <p>вислів</p>
+                <h3 className="first"> ABOUT CLINIC</h3>
+                <p>FRC - TIME TO LIVE WITHOUT PAIN!</p>
                 <article>
-                    ARTICLE Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit. Est illum deleniti qui nisi, vel ea dolore minus
-                    assumenda. Odit perferendis consectetur itaque repellendus
-                    rem corrupti laborum exercitationem provident. Sunt, dolor.
+                    FRC - this is a center that combines minimally invasive
+                    surgical treatment of pain syndromes with modern methods of
+                    rehabilitation and physiotherapy
                 </article>
-                <p>Мета - яка мета</p>
+                <p>Our goal is to return to an active life without pain!</p>
                 <Button variant="contained">Дізнатись трохи більше</Button>
             </div>
             <div className="about_video">

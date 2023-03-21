@@ -40,22 +40,22 @@ const Menu = ({ favoriteCardNews }: Props) => {
                 <div className="dropdown_modal">
                     <ul>
                         <li>
-                            <Link to="/">Реабілітація для дорослих</Link>
+                            <Link to="/">Rehabilitation for adults</Link>
                         </li>
                         <li>
-                            <Link to="/">Лікувальні блокади</Link>
+                            <Link to="/">Medical injections</Link>
                         </li>
                         <li>
-                            <Link to="/">Реабілітація для дітей</Link>
+                            <Link to="/">Rehabilitation for children</Link>
                         </li>
                         <li>
-                            <Link to="/">Фізеотерапія</Link>
+                            <Link to="/">Physiotherapy</Link>
                         </li>
                         <li>
-                            <Link to="/">Консультація лікарів</Link>
+                            <Link to="/">Consultation of doctors</Link>
                         </li>
                         <li>
-                            <Link to="/">Діагностика</Link>
+                            <Link to="/">Diagnostics</Link>
                         </li>
                     </ul>
                 </div>
