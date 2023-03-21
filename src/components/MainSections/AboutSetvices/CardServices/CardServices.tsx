@@ -47,19 +47,34 @@ const CardServices = ({ changeToArtrouse }: Props) => {
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <Link href="#" underline="always">
+                                        <NavLink
+                                            to="/article"
+                                            onClick={() =>
+                                                changeToArtrouse(link3)
+                                            }
+                                        >
                                             {link3}
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link href="#" underline="always">
+                                        <NavLink
+                                            to="/article"
+                                            onClick={() =>
+                                                changeToArtrouse(link4)
+                                            }
+                                        >
                                             {link4}
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link href="#" underline="always">
+                                        <NavLink
+                                            to="/article"
+                                            onClick={() =>
+                                                changeToArtrouse(link5)
+                                            }
+                                        >
                                             {link5}
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </Typography>
