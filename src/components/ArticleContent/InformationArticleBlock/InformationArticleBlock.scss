@@ -1,0 +1,23 @@
+.background-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #13225c;
+    color: white;
+    padding: 70px 0;
+    margin: 20px 0;
+    div {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.MuiSvgIcon-fontSizeLarge {
+    width: 70px;
+    height: 70px;
+}

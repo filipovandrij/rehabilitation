@@ -1,6 +1,7 @@
 import { Container, Paper } from '@mui/material'
 import CallBack from '../MainSections/CallBack/CallBack'
 import './ArticleContent.scss'
+import InformationArticleBlock from './InformationArticleBlock/InformationArticleBlock'
 
 type Props = { title: string; description: string }
 const ArticleContent = ({ title, description }: Props) => {
@@ -53,6 +54,28 @@ const ArticleContent = ({ title, description }: Props) => {
                     </p>
 
                     <img src="/images/look-this.jpg" alt="123" />
+                </div>
+            </Container>
+            <InformationArticleBlock />
+            <Container className="description-container" maxWidth="xl">
+                <div className="info-box">
+                    <img src="/images/look-this.jpg" alt="123" />
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Qui quos deleniti, nisi blanditiis inventore
+                        suscipit. Fuga nobis, officiis recusandae voluptatibus
+                        vero soluta et saepe laboriosam consectetur, itaque,
+                        expedita eveniet enim.Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Qui quos deleniti, nisi
+                        blanditiis inventore suscipit. Fuga nobis, officiis
+                        recusandae voluptatibus vero soluta et saepe laboriosam
+                        consectetur, itaque, expedita eveniet enim.Lorem ipsum
+                        dolor sit, amet consectetur adipisicing elit. Qui quos
+                        deleniti, nisi blanditiis inventore suscipit. Fuga
+                        nobis, officiis recusandae voluptatibus vero soluta et
+                        saepe laboriosam consectetur, itaque, expedita eveniet
+                        enim.
+                    </p>
                 </div>
             </Container>
         </>
