@@ -6,7 +6,10 @@
     justify-content: space-between;
 
     ul {
+        padding: 0;
+        list-style: none;
         li {
+            padding-top: 5px;
             color: white;
             a {
                 color: white;

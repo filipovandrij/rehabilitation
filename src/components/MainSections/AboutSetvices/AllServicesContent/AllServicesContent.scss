@@ -1,0 +1,30 @@
+.main-section {
+    color: white;
+    margin-top: 20px;
+
+    .title-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    .img-title {
+        border-radius: 10px;
+    }
+    .link-box-show {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 10px;
+        a {
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-top: 10px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .link-box-hide {
+        display: none;
+    }
+}

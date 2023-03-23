@@ -3,13 +3,15 @@ import AppRegistrationIcon from '@mui/icons-material/AppRegistration'
 import './Menu.scss'
 import { Link } from 'react-router-dom'
 import FavoriteTotalAdd from '../FavoriteCard/FavoriteTotalAdd'
+import servicesCard from '../../utils/mocks/servicesCard.mock'
 
 type Props = {
+    changeToServices: (enterLink: string) => void
     favoriteCardNews: {
         [id: number]: number
     }
 }
-const Menu = ({ favoriteCardNews }: Props) => {
+const Menu = ({ changeToServices, favoriteCardNews }: Props) => {
     return (
         <>
             <Button className="btn">
@@ -39,24 +41,16 @@ const Menu = ({ favoriteCardNews }: Props) => {
                 Services
                 <div className="dropdown_modal">
                     <ul>
-                        <li>
-                            <Link to="/">Rehabilitation for adults</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Medical injections</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Rehabilitation for children</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Physiotherapy</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Consultation of doctors</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Diagnostics</Link>
-                        </li>
+                        {servicesCard.map(({ title }) => (
+                            <li>
+                                <Link
+                                    to="/allServices"
+                                    onClick={() => changeToServices(title)}
+                                >
+                                    {title}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </Button>

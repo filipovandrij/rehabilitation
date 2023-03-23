@@ -1,6 +1,5 @@
 import { Card, CardContent, CardMedia, Typography } from '@mui/material'
 import { NavLink } from 'react-router-dom'
-import './CardServices.scss'
 import servicesCard from '../../../../utils/mocks/servicesCard.mock'
 
 type Props = {
@@ -16,6 +15,7 @@ const CardServices = ({ changeToArtrouse }: Props) => {
                         sx={{ height: 'auto', width: 400, marginTop: 5 }}
                     >
                         <CardMedia
+                            className="title-img"
                             sx={{ height: 140 }}
                             image={imgSrc}
                             title="green iguana"

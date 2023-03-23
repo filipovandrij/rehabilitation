@@ -1,0 +1,11 @@
+.main-section {
+  color: white;
+  margin-top: 20px;
+}
+.main-section .title-box {
+  display: flex;
+  justify-content: space-between;
+}
+.main-section .img-title {
+  border-radius: 10px;
+}/*# sourceMappingURL=AllServicesContent.css.map */

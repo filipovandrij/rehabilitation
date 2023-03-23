@@ -5,7 +5,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.container_inner_row ul {
+  padding: 0;
+  list-style: none;
+}
 .container_inner_row ul li {
+  padding-top: 5px;
   color: white;
 }
 .container_inner_row ul li a {

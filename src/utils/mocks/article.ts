@@ -169,7 +169,7 @@ const article: Article[] = [
     pDescription3:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae corporis ipsam illum nisi dolores quidem in veniam cupiditate eum reiciendis hic provident at laborum, sit consequatur perferendis suscipit rerum.',
     },
     {
-    title: '...',
+    title: '',
     description: 'NOT FOUND',
     imgSrcTitle:'string',
     imgSrc1:'string',

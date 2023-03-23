@@ -11,6 +11,7 @@ import HistoriesOfPatients from '../../pages/HistoriesOfPatients/HistoriesOfPati
 import { useState } from 'react'
 import Price from '../../pages/Price/Price'
 import Articles from '../../pages/Articles/Articles'
+import AllServices from '../../pages/AllServices/AllServices'
 
 type Props = {}
 type FavoriteCardNews = {
@@ -34,16 +35,25 @@ const App = (props: Props) => {
         }))
     }
 
-    const [cardsOfArtecles, setCardOfArtouse] = useState<string>('')
+    const [cardsOfArticles, setCardOfArtouse] = useState<string>('')
 
     const changeToArtrouse = (enterLink: string) => {
         setCardOfArtouse(enterLink)
     }
 
+    const [cardOfServices, setCardOfServices] = useState<string>('')
+
+    const changeToServices = (enterLink: string) => {
+        setCardOfServices(enterLink)
+    }
+
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
-            <Header favoriteCardNews={favoriteCardNews} />
+            <Header
+                favoriteCardNews={favoriteCardNews}
+                changeToServices={changeToServices}
+            />
 
             <Routes>
                 <Route
@@ -73,7 +83,16 @@ const App = (props: Props) => {
                 />
                 <Route
                     path="/article"
-                    element={<Articles cardsOfArtecles={cardsOfArtecles} />}
+                    element={<Articles cardsOfArticles={cardsOfArticles} />}
+                />
+                <Route
+                    path="/allServices"
+                    element={
+                        <AllServices
+                            cardOfServices={cardOfServices}
+                            changeToArtrouse={changeToArtrouse}
+                        />
+                    }
                 />
             </Routes>
             <Footer />

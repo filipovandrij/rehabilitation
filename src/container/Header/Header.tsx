@@ -8,11 +8,12 @@ import Menu from '../../components/Menu/Menu'
 import { Link } from 'react-router-dom'
 
 type Props = {
+    changeToServices: (enterLink: string) => void
     favoriteCardNews: {
         [id: number]: number
     }
 }
-const Header = ({ favoriteCardNews }: Props) => {
+const Header = ({ changeToServices, favoriteCardNews }: Props) => {
     return (
         <AppBar position="static" className="app-bar">
             <Link className="main-link" to="/">
@@ -32,7 +33,10 @@ const Header = ({ favoriteCardNews }: Props) => {
                     >
                         Filipov Rehabilitation Center
                     </Typography>
-                    <Menu favoriteCardNews={favoriteCardNews} />
+                    <Menu
+                        favoriteCardNews={favoriteCardNews}
+                        changeToServices={changeToServices}
+                    />
                 </Toolbar>
             </Link>
         </AppBar>

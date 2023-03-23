@@ -2,9 +2,9 @@ import ArticleContent from '../../components/ArticleContent/ArticleContent'
 import article from '../../utils/mocks/article'
 
 type Props = {
-    cardsOfArtecles: string
+    cardsOfArticles: string
 }
-const Articles = ({ cardsOfArtecles }: Props) => {
+const Articles = ({ cardsOfArticles }: Props) => {
     return (
         <>
             {article.map(
@@ -19,7 +19,7 @@ const Articles = ({ cardsOfArtecles }: Props) => {
                     imgSrc3,
                     pDescription3,
                 }) =>
-                    cardsOfArtecles === title ? (
+                    cardsOfArticles === title ? (
                         <ArticleContent
                             title={title}
                             description={description}
