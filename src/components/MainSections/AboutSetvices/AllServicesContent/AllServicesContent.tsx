@@ -1,7 +1,6 @@
 import { Button, Container } from '@mui/material'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import article from '../../../../utils/mocks/article'
 import './AllServicesContent.scss'
 
 type Props = {
