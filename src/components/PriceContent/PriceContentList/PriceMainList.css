@@ -1,0 +1,14 @@
+.show-price-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 20px 0;
+}
+.show-price-container button {
+  width: 200px;
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+}/*# sourceMappingURL=PriceMainList.css.map */

@@ -1,0 +1,18 @@
+.app-bar {
+  background-color: #001e3c;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.slider {
+  width: 800px;
+  height: 300px;
+}
+
+.main-link {
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+}/*# sourceMappingURL=Header.css.map */

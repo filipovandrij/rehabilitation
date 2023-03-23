@@ -1,0 +1,35 @@
+.main-title-container {
+  background-color: #13225c;
+  color: white;
+}
+
+.inner-title-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.inner-title-container img {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.description-container {
+  color: white;
+}
+.description-container .info-box {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.description-container .info-box img {
+  width: 60%;
+  background-color: white;
+  border-radius: 10px;
+}
+.description-container .info-box p {
+  margin-right: 30px;
+  width: 30%;
+  font-size: 15px;
+}/*# sourceMappingURL=ArticleContent.css.map */

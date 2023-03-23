@@ -1,0 +1,56 @@
+.about-us {
+  color: white;
+  margin-top: 15px;
+}
+.about-us h3 {
+  border: none;
+}
+.about-us .title {
+  font-size: 30px;
+  color: #aee0fd;
+  text-decoration: underline;
+}
+.about-us section {
+  padding: 15px 0;
+}
+.about-us .inner-section-first {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .inner-section-first .description {
+  margin: auto;
+}
+.about-us .inner-section-second .column-container {
+  display: flex;
+  flex-direction: column;
+}
+.about-us .inner-section-second .row-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-us .inner-section-second .MuiPaper-root {
+  background-color: #13225c;
+  color: white;
+}
+.about-us .inner-section-second .MuiTypography-h5 {
+  display: flex;
+  align-items: center;
+}
+.about-us .inner-section-second .MuiTypography-h5 .MuiSvgIcon-fontSizeLarge {
+  margin-right: 5px;
+}
+.about-us .inner-section-third {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .inner-section-third .description-third {
+  margin: auto 0;
+  width: 50%;
+}
+.about-us .inner-section-third .image-div {
+  width: 50%;
+  background-image: url("./about-us.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=AboutUs.css.map */

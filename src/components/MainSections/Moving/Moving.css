@@ -1,0 +1,17 @@
+.moving_bg {
+  background-image: url("./sport_line.jpeg");
+  margin: 40px 0 0;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}/*# sourceMappingURL=Moving.css.map */

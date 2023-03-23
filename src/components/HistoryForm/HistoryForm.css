@@ -1,0 +1,42 @@
+.comment-container {
+  background-color: #001e3c;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 500px;
+}
+.comment-container h3 {
+  margin: 10px 0 0;
+  color: white;
+}
+.comment-container .text-area::-moz-placeholder {
+  font-size: 15px;
+}
+.comment-container .text-area::placeholder {
+  font-size: 15px;
+}
+.comment-container .close-btn {
+  margin-bottom: 30px;
+}
+
+.text-field .MuiOutlinedInput-root:hover fieldset {
+  border-color: #1976d2;
+}
+.text-field fieldset {
+  border-color: white;
+}
+.text-field fieldset:hover {
+  border-color: white;
+}
+.text-field .MuiInputLabel-root {
+  color: white;
+}
+
+.row {
+  display: flex;
+}
+.row .your-mail {
+  margin-left: 10px;
+}/*# sourceMappingURL=HistoryForm.css.map */

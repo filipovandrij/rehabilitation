@@ -1,0 +1,46 @@
+footer {
+  padding-top: 40px;
+  background-color: #001e3c;
+  color: white;
+}
+footer hr {
+  border: 1px solid white;
+}
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .container_box_one {
+  width: 40%;
+}
+footer .container_box_one P {
+  width: 80%;
+}
+footer .container_box_two {
+  width: 60%;
+}
+footer .container_box_two .support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container_box_two .email_btn {
+  text-align: center;
+}
+footer .logo {
+  display: flex;
+  align-items: center;
+}
+footer .text-field .MuiOutlinedInput-root:hover fieldset {
+  border-color: #1976d2;
+}
+footer .text-field fieldset {
+  border-color: white;
+}
+footer .text-field fieldset:hover {
+  border-color: white;
+}
+footer .text-field .MuiInputLabel-root {
+  color: white;
+}/*# sourceMappingURL=Footer.css.map */

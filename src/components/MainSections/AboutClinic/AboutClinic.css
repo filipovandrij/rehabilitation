@@ -1,0 +1,20 @@
+.section_about_clinic {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section_about_clinic article {
+  width: 80%;
+}
+.section_about_clinic .about_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+}
+.section_about_clinic .container_about {
+  margin: auto 15px;
+}/*# sourceMappingURL=AboutClinic.css.map */

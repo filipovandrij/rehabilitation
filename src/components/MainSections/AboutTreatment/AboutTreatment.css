@@ -1,0 +1,15 @@
+.section_about_treatment {
+  padding-bottom: 20px;
+}
+.section_about_treatment hr {
+  border: 3px solid white;
+}
+.section_about_treatment .cart_text_bg {
+  height: auto;
+  width: 400px;
+}
+.section_about_treatment .cart_text_bg .MuiTypography-h5 {
+  border-bottom: 2px solid white;
+  height: 100%;
+  display: flex;
+}/*# sourceMappingURL=AboutTreatment.css.map */

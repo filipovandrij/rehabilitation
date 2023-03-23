@@ -40,7 +40,7 @@ const article: Article[] = [
     title: 'SOFT MANUAL THERAPY',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae corporis ipsam illum nisi dolores quidem in veniam cupiditate eum reiciendis hic provident at laborum, sit consequatur perferendis suscipit rerum.',
     imgSrcTitle:'images/articleImg/img3-1.jpg',
-    imgSrc1:'images/articleImg/img3-2.jpg.png',
+    imgSrc1:'images/articleImg/img3-2.png',
     pDescription1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae corporis ipsam illum nisi dolores quidem in veniam cupiditate eum reiciendis hic provident at laborum, sit consequatur perferendis suscipit rerum.',
     imgSrc2:'images/articleImg/img3-3.jpg',
     pDescription2:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae corporis ipsam illum nisi dolores quidem in veniam cupiditate eum reiciendis hic provident at laborum, sit consequatur perferendis suscipit rerum.',
