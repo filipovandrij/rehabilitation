@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import ArticleContent from '../../components/ArticleContent/ArticleContent'
 import article from '../../utils/mocks/article'
 
@@ -5,6 +6,9 @@ type Props = {
     cardsOfArticles: string
 }
 const Articles = ({ cardsOfArticles }: Props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             {article.map(

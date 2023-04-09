@@ -7,12 +7,16 @@ import Moving from '../../components/MainSections/Moving/Moving'
 import AboutTreatment from '../../components/MainSections/AboutTreatment/AboutTreatment'
 import Recovery from '../../components/MainSections/Recovery/Recovery'
 import './Main.scss'
+import { useEffect } from 'react'
 type Props = {
     changeToArtrouse: (enterLink: string) => void
     cardsOfArticles: string
 }
 
 const Main = ({ cardsOfArticles, changeToArtrouse }: Props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <main>
