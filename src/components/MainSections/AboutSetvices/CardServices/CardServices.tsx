@@ -3,9 +3,10 @@ import { NavLink } from 'react-router-dom'
 import servicesCard from '../../../../utils/mocks/servicesCard.mock'
 
 type Props = {
+    cardsOfArticles: string
     changeToArtrouse: (enterLink: string) => void
 }
-const CardServices = ({ changeToArtrouse }: Props) => {
+const CardServices = ({ cardsOfArticles, changeToArtrouse }: Props) => {
     return (
         <>
             {servicesCard.map(
@@ -39,14 +40,14 @@ const CardServices = ({ changeToArtrouse }: Props) => {
                                             onClick={() =>
                                                 changeToArtrouse(link1)
                                             }
-                                            to="/article"
+                                            to={cardsOfArticles}
                                         >
                                             {link1}
                                         </NavLink>
                                     </li>
                                     <li>
                                         <NavLink
-                                            to="/article"
+                                            to={cardsOfArticles}
                                             onClick={() =>
                                                 changeToArtrouse(link2)
                                             }
@@ -56,7 +57,7 @@ const CardServices = ({ changeToArtrouse }: Props) => {
                                     </li>
                                     <li>
                                         <NavLink
-                                            to="/article"
+                                            to={cardsOfArticles}
                                             onClick={() =>
                                                 changeToArtrouse(link3)
                                             }
@@ -66,7 +67,7 @@ const CardServices = ({ changeToArtrouse }: Props) => {
                                     </li>
                                     <li>
                                         <NavLink
-                                            to="/article"
+                                            to={cardsOfArticles}
                                             onClick={() =>
                                                 changeToArtrouse(link4)
                                             }
@@ -76,7 +77,7 @@ const CardServices = ({ changeToArtrouse }: Props) => {
                                     </li>
                                     <li>
                                         <NavLink
-                                            to="/article"
+                                            to={cardsOfArticles}
                                             onClick={() =>
                                                 changeToArtrouse(link5)
                                             }

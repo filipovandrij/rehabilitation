@@ -1,6 +1,7 @@
 import { Button, Container } from '@mui/material'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import Slider from '../../../Slider/Slider'
 import './AllServicesContent.scss'
 
 type Props = {

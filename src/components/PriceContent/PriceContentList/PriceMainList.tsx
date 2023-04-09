@@ -13,8 +13,10 @@ type Props = {
     changeChildrenBtn?: boolean
     changeRehubBtn?: boolean
     changeConsultationBtn?: boolean
+    cardsOfArticles?: any
 }
 const PriceMainList = ({
+    cardsOfArticles,
     changeToArtrouse,
     changeRehubBtn,
     changePhysiotherapyBtn,
@@ -27,7 +29,10 @@ const PriceMainList = ({
 }: Props) => {
     return (
         <Container maxWidth="xl">
-            <AboutSetvices changeToArtrouse={changeToArtrouse} />
+            <AboutSetvices
+                cardsOfArticles={cardsOfArticles}
+                changeToArtrouse={changeToArtrouse}
+            />
             <h3>PRICES FOR SERVICES</h3>
             <section className="show-price-container">
                 <Button

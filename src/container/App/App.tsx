@@ -58,7 +58,12 @@ const App = (props: Props) => {
             <Routes>
                 <Route
                     path="/"
-                    element={<Main changeToArtrouse={changeToArtrouse} />}
+                    element={
+                        <Main
+                            cardsOfArticles={cardsOfArticles}
+                            changeToArtrouse={changeToArtrouse}
+                        />
+                    }
                 />
                 <Route path="about-us" element={<AboutUs />} />
                 <Route
@@ -82,7 +87,7 @@ const App = (props: Props) => {
                     element={<Price changeToArtrouse={changeToArtrouse} />}
                 />
                 <Route
-                    path="/article"
+                    path={cardsOfArticles}
                     element={<Articles cardsOfArticles={cardsOfArticles} />}
                 />
                 <Route
