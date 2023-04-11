@@ -94,6 +94,7 @@ const App = (props: Props) => {
                     path="/allServices"
                     element={
                         <AllServices
+                            cardsOfArticles={cardsOfArticles}
                             cardOfServices={cardOfServices}
                             changeToArtrouse={changeToArtrouse}
                         />

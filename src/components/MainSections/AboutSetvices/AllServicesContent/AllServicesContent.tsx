@@ -5,6 +5,7 @@ import './AllServicesContent.scss'
 
 type Props = {
     changeToArtrouse: (enterLink: string) => void
+    cardsOfArticles: string
     id: number
     description: string
     imgSrc: string
@@ -16,6 +17,7 @@ type Props = {
     link5: string
 }
 const AllServicesContent = ({
+    cardsOfArticles,
     changeToArtrouse,
     description,
     imgSrc,
@@ -52,23 +54,38 @@ const AllServicesContent = ({
             </Button>
 
             <div className={showText}>
-                <NavLink to="/article" onClick={() => changeToArtrouse(link1)}>
+                <NavLink
+                    to={cardsOfArticles}
+                    onClick={() => changeToArtrouse(link1)}
+                >
                     {link1}
                 </NavLink>
 
-                <NavLink to="/article" onClick={() => changeToArtrouse(link2)}>
+                <NavLink
+                    to={cardsOfArticles}
+                    onClick={() => changeToArtrouse(link2)}
+                >
                     {link2}
                 </NavLink>
 
-                <NavLink to="/article" onClick={() => changeToArtrouse(link3)}>
+                <NavLink
+                    to={cardsOfArticles}
+                    onClick={() => changeToArtrouse(link3)}
+                >
                     {link3}
                 </NavLink>
 
-                <NavLink to="/article" onClick={() => changeToArtrouse(link4)}>
+                <NavLink
+                    to={cardsOfArticles}
+                    onClick={() => changeToArtrouse(link4)}
+                >
                     {link4}
                 </NavLink>
 
-                <NavLink to="/article" onClick={() => changeToArtrouse(link5)}>
+                <NavLink
+                    to={cardsOfArticles}
+                    onClick={() => changeToArtrouse(link5)}
+                >
                     {link5}
                 </NavLink>
             </div>

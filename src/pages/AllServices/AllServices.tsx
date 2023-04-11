@@ -3,9 +3,14 @@ import servicesCard from '../../utils/mocks/servicesCard.mock'
 
 type Props = {
     cardOfServices: string
+    cardsOfArticles: string
     changeToArtrouse: (enterLink: string) => void
 }
-const AllServices = ({ cardOfServices, changeToArtrouse }: Props) => {
+const AllServices = ({
+    cardsOfArticles,
+    cardOfServices,
+    changeToArtrouse,
+}: Props) => {
     return (
         <>
             {servicesCard.map(
@@ -22,6 +27,7 @@ const AllServices = ({ cardOfServices, changeToArtrouse }: Props) => {
                 }) =>
                     cardOfServices === title ? (
                         <AllServicesContent
+                            cardsOfArticles={cardsOfArticles}
                             changeToArtrouse={changeToArtrouse}
                             id={id}
                             description={description}
