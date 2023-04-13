@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer'
 import { StyledEngineProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import AboutUs from '../../pages/About/AboutUs'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import News from '../../pages/News/News'
 import Favorite from '../../pages/Favorite/Favorite'
 import HistoriesOfPatients from '../../pages/HistoriesOfPatients/HistoriesOfPatients'
@@ -51,6 +51,7 @@ const App = (props: Props) => {
         <StyledEngineProvider injectFirst>
             <CssBaseline />
             <Header
+                cardsOfArticles={cardsOfArticles}
                 favoriteCardNews={favoriteCardNews}
                 changeToServices={changeToServices}
             />
@@ -86,10 +87,12 @@ const App = (props: Props) => {
                     path="/price"
                     element={<Price changeToArtrouse={changeToArtrouse} />}
                 />
+
                 <Route
                     path={cardsOfArticles}
                     element={<Articles cardsOfArticles={cardsOfArticles} />}
                 />
+
                 <Route
                     path="/allServices"
                     element={
@@ -99,6 +102,10 @@ const App = (props: Props) => {
                             changeToArtrouse={changeToArtrouse}
                         />
                     }
+                />
+                <Route
+                    path={`/allServices${cardsOfArticles}`}
+                    element={<Articles cardsOfArticles={cardsOfArticles} />}
                 />
             </Routes>
             <Footer />

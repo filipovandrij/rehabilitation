@@ -55,35 +55,35 @@ const AllServicesContent = ({
 
             <div className={showText}>
                 <NavLink
-                    to={cardsOfArticles}
+                    to={`/allServices${cardsOfArticles}`}
                     onClick={() => changeToArtrouse(link1)}
                 >
                     {link1}
                 </NavLink>
 
                 <NavLink
-                    to={cardsOfArticles}
+                    to={`/allServices${cardsOfArticles}`}
                     onClick={() => changeToArtrouse(link2)}
                 >
                     {link2}
                 </NavLink>
 
                 <NavLink
-                    to={cardsOfArticles}
+                    to={`/allServices${cardsOfArticles}`}
                     onClick={() => changeToArtrouse(link3)}
                 >
                     {link3}
                 </NavLink>
 
                 <NavLink
-                    to={cardsOfArticles}
+                    to={`/allServices${cardsOfArticles}`}
                     onClick={() => changeToArtrouse(link4)}
                 >
                     {link4}
                 </NavLink>
 
                 <NavLink
-                    to={cardsOfArticles}
+                    to={`/allServices${cardsOfArticles}`}
                     onClick={() => changeToArtrouse(link5)}
                 >
                     {link5}

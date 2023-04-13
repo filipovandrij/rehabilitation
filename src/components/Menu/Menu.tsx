@@ -7,11 +7,16 @@ import servicesCard from '../../utils/mocks/servicesCard.mock'
 
 type Props = {
     changeToServices: (enterLink: string) => void
+    cardsOfArticles: string
     favoriteCardNews: {
         [id: number]: number
     }
 }
-const Menu = ({ changeToServices, favoriteCardNews }: Props) => {
+const Menu = ({
+    cardsOfArticles,
+    changeToServices,
+    favoriteCardNews,
+}: Props) => {
     return (
         <>
             <Button className="btn">
