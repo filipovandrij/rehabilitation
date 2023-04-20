@@ -6,8 +6,10 @@ import { useEffect } from 'react'
 type Props = {
     addProductToCart: (id: number, count: number) => void
     removeProductToCart: (id: number, count: number) => void
+
+    newsId: (enterId: number) => void
 }
-const News = ({ removeProductToCart, addProductToCart }: Props) => {
+const News = ({ newsId, removeProductToCart, addProductToCart }: Props) => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -24,6 +26,7 @@ const News = ({ removeProductToCart, addProductToCart }: Props) => {
                         watchCount,
                     }) => (
                         <NewsCard
+                            newsId={newsId}
                             removeProductToCart={removeProductToCart}
                             addProductToCart={addProductToCart}
                             key={id}

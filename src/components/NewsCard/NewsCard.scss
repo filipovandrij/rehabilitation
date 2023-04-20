@@ -26,9 +26,18 @@
     align-items: first baseline;
 }
 .like-box {
+    margin-bottom: 10px;
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    .open-btn {
+        margin-right: 10px;
+    }
     .eye-count {
         margin-left: 10px;
     }

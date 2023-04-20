@@ -12,6 +12,7 @@ import { useState } from 'react'
 import Price from '../../pages/Price/Price'
 import Articles from '../../pages/Articles/Articles'
 import AllServices from '../../pages/AllServices/AllServices'
+import FullNewsCard from '../../components/FullNewsCard/FullNewsCard'
 
 type Props = {}
 type FavoriteCardNews = {
@@ -47,6 +48,14 @@ const App = (props: Props) => {
         setCardOfServices(enterLink)
     }
 
+    const [newsCardId, setNewsCardId] = useState<number>()
+
+    const newsId = (enterId: number) => {
+        setNewsCardId(enterId)
+    }
+
+    console.log(newsCardId)
+
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
@@ -71,10 +80,15 @@ const App = (props: Props) => {
                     path="/news"
                     element={
                         <News
+                            newsId={newsId}
                             removeProductToCart={removeProductToCart}
                             addProductToCart={addProductToCart}
                         />
                     }
+                />
+                <Route
+                    path={`/fullcard${newsCardId}`}
+                    element={<FullNewsCard newsCardId={newsCardId} />}
                 />
                 <Route
                     path="/favorite"

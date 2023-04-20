@@ -9,6 +9,7 @@ const Articles = ({ cardsOfArticles }: Props) => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
     return (
         <>
             {article.map(

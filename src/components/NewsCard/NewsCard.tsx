@@ -1,4 +1,5 @@
 import {
+    Button,
     Card,
     CardContent,
     CardMedia,
@@ -12,6 +13,7 @@ import './NewsCard.scss'
 import { useAppDispatch, useAppSelector } from '../../redux/hooks'
 import { addLike, removeLike } from '../../redux/likeReducer'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 type Props = {
     id: number
@@ -22,9 +24,11 @@ type Props = {
     watchCount: number
     removeProductToCart: (id: number, count: number) => void
     addProductToCart: (id: number, count: number) => void
+    newsId: (enterId: number) => void
 }
 
 const NewsCard = ({
+    newsId,
     removeProductToCart,
     addProductToCart,
     id,
@@ -62,32 +66,43 @@ const NewsCard = ({
                     </CardContent>
                     <CardContent component="article">{description}</CardContent>
                     <div className="like-box">
-                        <IconButton
-                            aria-label="add to favorites"
-                            onClick={() => {
-                                if (isLiked) {
-                                    dispatch(removeLike(id))
-                                    removeNumberCount(1)
-                                    removeProductToCart(id, 1)
-                                } else {
-                                    dispatch(addLike(id))
-                                    addNumberCount(1)
-                                    addProductToCart(id, 1)
-                                }
-                            }}
-                        >
-                            {isLiked ? (
-                                <FavoriteIcon color="primary" />
-                            ) : (
-                                <FavoriteBorderIcon color="primary" />
-                            )}
-                        </IconButton>
-                        {likesCounter}
-                        <RemoveRedEyeIcon
-                            className="eye-count"
-                            color="primary"
-                        />
-                        {watchCount}
+                        <div>
+                            <IconButton
+                                aria-label="add to favorites"
+                                onClick={() => {
+                                    if (isLiked) {
+                                        dispatch(removeLike(id))
+                                        removeNumberCount(1)
+                                        removeProductToCart(id, 1)
+                                    } else {
+                                        dispatch(addLike(id))
+                                        addNumberCount(1)
+                                        addProductToCart(id, 1)
+                                    }
+                                }}
+                            >
+                                {isLiked ? (
+                                    <FavoriteIcon color="primary" />
+                                ) : (
+                                    <FavoriteBorderIcon color="primary" />
+                                )}
+                            </IconButton>
+                            {likesCounter}
+                            <RemoveRedEyeIcon
+                                className="eye-count"
+                                color="primary"
+                            />
+                            {watchCount}
+                        </div>
+                        <Link to={`/fullcard${id}`}>
+                            <Button
+                                className="open-btn"
+                                variant="contained"
+                                onClick={() => newsId(id)}
+                            >
+                                Open
+                            </Button>
+                        </Link>
                     </div>
                 </Card>
             </Container>
