@@ -35,9 +35,6 @@ const Menu = ({
                         <li>
                             <Link to="/price">Price</Link>
                         </li>
-                        <li>
-                            <Link to="/">Our Team</Link>
-                        </li>
                     </ul>
                 </div>
             </Button>
@@ -59,33 +56,7 @@ const Menu = ({
                     </ul>
                 </div>
             </Button>
-            <Button className="btn">
-                Treatment
-                <div className="dropdown_modal">
-                    <ul>
-                        <li>
-                            <Link to="/">Treatment of spine diseases</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Treatment of joint diseases</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Treatment of pain syndrome</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Children's rehabilitation</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Prevention and recovery</Link>
-                        </li>
-                        <li>
-                            <Link to="/">
-                                Treatment of diseases of the muscular system
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-            </Button>
+
             <Button className="btn">Contact</Button>
             <Link className="favorite-page" to="/Favorite">
                 <Button className="btn">

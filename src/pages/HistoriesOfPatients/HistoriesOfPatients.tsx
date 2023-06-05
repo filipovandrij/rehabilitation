@@ -1,11 +1,14 @@
 import { Card, CardContent, Container, Typography } from '@mui/material'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import HistoryForm from '../../components/HistoryForm/HistoryForm'
 import arrReviews from '../../utils/mocks/arrReviews'
 
 type Props = {}
 
 const HistoriesOfPatients = (props: Props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     const [reviews, setReviews] = useState(arrReviews)
 
     const [newReview, setNewReview] = useState({

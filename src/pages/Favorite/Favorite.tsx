@@ -1,6 +1,5 @@
 import { Container } from '@mui/material'
 import FavoriteCard from '../../components/FavoriteCard/FavoriteCard'
-import Slider from '../../components/Slider/Slider'
 import newsCardsArray from '../../utils/mocks/newsCards'
 
 type Props = {
@@ -22,7 +21,6 @@ const Favorite = ({ removeProductToCart }: Props) => {
                     />
                 )
             )}
-            <Slider></Slider>
         </Container>
     )
 }

@@ -75,6 +75,7 @@ const App = (props: Props) => {
                         />
                     }
                 />
+
                 <Route path="about-us" element={<AboutUs />} />
                 <Route
                     path="/news"

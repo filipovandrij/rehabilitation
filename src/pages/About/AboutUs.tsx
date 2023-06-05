@@ -2,9 +2,13 @@ import { Container } from '@mui/material'
 import ReactPlayer from 'react-player'
 import './AboutUs.scss'
 import InfoCards from '../../components/InfoCard/infoCards'
+import { useEffect } from 'react'
 
 type Props = {}
 const AboutUs = (props: Props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <section className="about-us">

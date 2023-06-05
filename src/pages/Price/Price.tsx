@@ -1,10 +1,14 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import PriceContent from '../../components/PriceContent/PriceContent'
 import PriceMainList from '../../components/PriceContent/PriceContentList/PriceMainList'
 import priceArr from '../../utils/mocks/priceArr'
 
 type Props = { changeToArtrouse: (enterLink: string) => void }
 const Price = ({ changeToArtrouse }: Props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const [changeRehubBtn, setChangeRehubBtn] = useState<boolean>()
     const clickRehubBtn = (changeRehubBtn: boolean) => {
         setChangeRehubBtn((prevState) => !prevState)
